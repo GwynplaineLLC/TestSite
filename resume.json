@@ -1,0 +1,598 @@
+{
+    "basics": {
+      "name": "Reed Geisler",
+      "label": "Medical Student",
+      "picture": "",
+      "email": "reed.geisler@gmail.com",
+      "phone": "(203) 505-4301",
+      "website": "https://reedismy.name",
+      "summary": "Hello! I am a first-year medical student at The Ohio State University College of Medicine that is strongly interested in developing applications of developed and emerging technologies to healthcare. Below is my CV, along with a brief description of most activities that I have been fortunate enough to experience and be involved with.",
+      "location": {
+        "address": "1478 Michigan Avenue",
+        "postalCode": "43201",
+        "city": "Columbus",
+        "countryCode": "US",
+        "region": "Ohio"
+      },
+      "profiles": [
+        {
+        "network": "Facebook",
+        "username": "reed.geisler",
+        "url": "https://www.facebook.com/reed.geisler"
+      }
+      ]
+    },
+
+    "work": [
+      {
+      "company": "Gwynplaine LLC",
+      "position": "Manager",
+      "website": "",
+      "startDate": "2017-05-01",
+      "endDate": "",
+      "summary": "This is an LLC I've established to house side projects and pursuits. This primarily involves on-demand 3D printing services and the pending launch of an educational healthcare-related YouTube channel",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Surgery Interest Group",
+      "position": "Treasurer",
+      "website": "",
+      "startDate": "2019-01-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Medical Students For Choice",
+      "position": "Treasurer",
+      "website": "",
+      "startDate": "2019-01-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Movies in Meiling",
+      "position": "Manager",
+      "website": "",
+      "startDate": "2018-09-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "UCARE (Ultrasound: Clinical, Administrative, Research, Education) Program",
+      "position": "Member",
+      "website": "",
+      "startDate": "2018-10-12",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "The Ohio State Univesrity College of Medicine Department of Educational Technology",
+      "position": "Student Collaborator",
+      "website": "",
+      "startDate": "2018-09-01",
+      "endDate": "2019-01-01",
+      "summary": "Initiated and completed a migration of lecture media resources onto a platform to consolidate lecture materials and allow additional functionality for students (e.g. playback speed modulation).",
+      "highlights": [
+      ]
+    },
+
+    {
+      "company": "University of Cambridge, Graduate School of Life Sciences",
+      "position": "GRASP Founder",
+      "website": "",
+      "startDate": "2017-12-01",
+      "endDate": "2018-07-01",
+      "summary": "Founded the GRAduate Student and Postdoctoral Forum (GRASP), a community for personal and professional development of graduate and postgraduate members of the life sciences disciplines at the University of Cambridge.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "University of Cambridge, Clinical School",
+      "position": "Faculty Board Member, Graduate Operations Committee Member, School Council",
+      "website": "",
+      "startDate": "2017-09-01",
+      "endDate": "2018-07-01",
+      "summary": "Elected by the graduate student body of the Clinical School at the University of Cambridge to represent student interests at meetings of the School Council, Graduate Operations Committee, and Faculty Board. In concert, these committees direct future direction of the clinical school.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "University of Cambridge, Churchill College Middle Common Room, 'The Vicious Penguin'",
+      "position": "Bartender",
+      "website": "",
+      "startDate": "2017-08-01",
+      "endDate": "2018-05-01",
+      "summary": "Worked weekly as a bartender for the graduate student community of Churchill College at the University of Cambridge.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Camp Kesem at Cornell",
+      "position": "Unit Leader",
+      "website": "",
+      "startDate": "2017-08-01",
+      "endDate": "2017-08-31",
+      "summary": "Supervised and led the oldest group of Camp Kesem participants (14-16 years of age) during camp. Camp Kesem is a community organization that supports children through cancer in their family.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell Adult University",
+      "position": "Health Director",
+      "website": "",
+      "startDate": "2017-05-01",
+      "endDate": "2017-07-31",
+      "summary": "Supervised summer session teenage participants in the Cornell Adult University program. Provided medical care and ensured students were taking prescribed medications during the program, an average of sixty students each week.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell University Class of 2017 Council",
+      "position": "Treasurer",
+      "website": "",
+      "startDate": "2016-01-01",
+      "endDate": "2017-06-01",
+      "summary": "Managed a budget of $60,000 for Cornell's Class of 2017 Council. Initiated a tiered mentorship program with treasurers of younger class councils to facilitate education about the role and communication of resources between councils.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell Orientation",
+      "position": "Steering Committee, Outreach Chair",
+      "website": "",
+      "startDate": "2015-10-01",
+      "endDate": "2016-10-01",
+      "summary": "Worked collaboratively with an administrator and fourteen student members of the Orientation Steering Committee to plan all logistics of Cornell Orientation, from recruitment and training of volunteers to all aspects of event registration and advertisement.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Department of Psychology",
+      "position": "Undergraduate Teaching Assistant, Introductory Psychology",
+      "website": "",
+      "startDate": "2016-08-01",
+      "endDate": "2016-12-20",
+      "summary": "Worked as an undergraduate teaching assistant in PSYCH 1101, Introductory Psychology. Proctored all exams, led review sessions, and held weekly office hours for students in the course.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell Physics Department",
+      "position": "Undergraduate and Graduate Teaching Assistant, Autotutorial Physics",
+      "website": "",
+      "startDate": "2015-08-01",
+      "endDate": "2017-05-25",
+      "summary": "Worked for four semesters as an undergraduate and graduate teaching assistant in PHYS 1101-1102, the course sequence for students self-teaching ('Auto-tutorial') Introductory Physics. Due to the necessarily open curriculum of the course and lack of lectures, I worked with several other teaching assistants to establish weekly review sessions, staff the course study/lab space, and address student concerns re:lab equipment and demos. I was one of the highest-rated teaching assistants for all four semesters of my role.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "University of Pittsburgh",
+      "position": "Summer Undergraduate Research Assistant, SURP",
+      "website": "",
+      "startDate": "2016-05-01",
+      "endDate": "2016-08-20",
+      "summary": "Worked as a summer student in the Freeman lab. Performed initial synthesis and in vitro testing on a novel drug candidate.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell Genetically Engineered Machines (iGEM) Project Team",
+      "position": "Business Team Lead",
+      "website": "",
+      "startDate": "2015-04-01",
+      "endDate": "2016-05-01",
+      "summary": "Business team lead and wetlab team member for Cornell iGEM Synthetic Biology Project Team. While working as the business team lead, our team's project earned a gold medal, best entrepreneurship, best best environmental project, and best applied desgin awards in the annual international synthetic biology competition (iGEM Jamboree).",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Academic Policy Committee",
+      "position": "Co-founder",
+      "website": "",
+      "startDate": "2015-05-01",
+      "endDate": "2016-05-25",
+      "summary": "Founded the Academic Policy Committee with collaboration from undergraduate representatives of Cornell's College of Arts & Sciences to the Student Assembly. Initiated the committee with a resolution that altered the structure of introductory biology and chemistry coursework at the university.",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell Bridges to Community",
+      "position": "Treasurer",
+      "website": "",
+      "startDate": "2015-08-01",
+      "endDate": "2016-05-25",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cayuga's Watchers",
+      "position": "Employee and Training Committee Member",
+      "website": "",
+      "startDate": "2014-05-01",
+      "endDate": "2016-05-25",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Zeta Psi Fraternity",
+      "position": "Risk Manager, Scholarship Chair",
+      "website": "2015-05-25",
+      "startDate": "2014-05-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell University, Department of Biological Sciences",
+      "position": "Study Group Leader",
+      "website": "",
+      "startDate": "2014-01-01",
+      "endDate": "2014-05-25",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Cornell Residential Student Congress",
+      "position": "Freshman Representative",
+      "website": "",
+      "startDate": "2013-08-20",
+      "endDate": "2014-05-25",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Boyce Thompson Institute for Plant Research",
+      "position": "Undergraduate Lab Assistant",
+      "website": "",
+      "startDate": "2013-08-31",
+      "endDate": "2014-04-01",
+      "summary": "",
+      "highlights": [
+      ]
+    }
+  ],
+
+    "volunteer": [
+      {"organization": "Physicians CareConnection",
+        "position": "Community Health Education Project Lead",
+        "website": "",
+        "startDate": "2019-01-19",
+        "endDate": "",
+        "summary": "",
+        "highlights": [
+          ""
+        ]
+        },
+      {"organization": "Cornell University Emergency Medical Services",
+        "position": "Emergency Medical Technician",
+        "website": "",
+        "startDate": "2014-02-01",
+        "endDate": "2015-12-20",
+        "summary": "Worked shifts on university ambulance (a student-run, Basic Life Support, non-transporting first response agency) as an EMT-Basic. Responsible for performing effective and prompt frontline care in both transport and non-transport scenarios.",
+        "highlights": [
+          ""
+        ]
+        },
+      {"organization": "Dryden Ambulance, Bangs Ambulance",
+        "position": "Emergency Medical Technician",
+        "website": "",
+        "startDate": "2014-08-01",
+        "endDate": "2015-05-20",
+        "summary": "Worked on Dryden and Bangs ambulance services as Advanced EMT student, leading response to Advanced Life Support (ALS) and Basic Life Support (BLS) emergencies",
+        "highlights": [
+          ""
+        ]
+        },
+      {"organization": "Cornell Prison Education Program",
+       "position": "Emergency Medical Technician",
+       "website": "",
+       "startDate": "2014-08-01",
+       "endDate": "2015-05-20",
+       "summary": "",
+        "highlights": [
+          ""
+        ]
+        },
+      {"organization": "Alpha Phi Omega Service Fraternity",
+        "position": "Emergency Medical Technician",
+        "website": "",
+        "startDate": "2014-08-01",
+        "endDate": "2015-05-20",
+        "summary": "",
+        "highlights": [
+          ""
+        ]
+        },
+        {"organization": "Empathy, Assistance, and Referral Service (EARS)",
+          "position": "Emergency Medical Technician",
+          "website": "",
+          "startDate": "2014-08-01",
+          "endDate": "2015-05-20",
+          "summary": "",
+          "highlights": [
+            ""
+          ]
+          },
+      {"organization": "New York Presbyterian-Cornell Hospital",
+      "position": "Emergency Department Volunteer",
+      "website": "",
+      "startDate": "2014-05-01",
+      "endDate": "2014-08-20",
+      "summary": "Worked as Emergency Department greeter and volunteer as part of Cornell's Summer in NYC Program. Also shadowed Anesthesiology, Cardiology, Cardiothoracic Surgery, and Pediatric Emergency specialties.",
+      "highlights": [
+        ""
+      ]
+      },
+      {"organization": "Motivating Action Through Community Health Outreach (MACHO)",
+        "position": "Summer Teacher",
+        "website": "",
+        "startDate": "2014-06-01",
+        "endDate": "2014-08-20",
+        "summary": "Taught students ranging in age from six to twelve years old in Harlem, New York City, about basic nutrition, health, and skills for healthy living through basic demonstrations of body systems and teaching them how to prepare healthy meals on a low budget (given $2/student/day).",
+        "highlights": [
+          ""
+        ]
+      },
+      {"organization": "Churches United For Fair Housing",
+          "position": "Outreach Volunteer",
+          "website": "",
+          "startDate": "2014-05-01",
+          "endDate": "2014-08-20",
+          "summary": "Performed outreach activities to raise awareness for affordable housing lotteries and developments in Greenpoint, Bedford-Stuyvesant, and Manhattan neighborhoods in New York City.",
+          "highlights": [
+            ""
+          ]
+      },
+      {"organization": "Westport Emergency Medical Services",
+        "position": "Emergency Medical Technician",
+        "website": "",
+        "startDate": "2013-01-01",
+        "endDate": "2013-08-20",
+        "summary": "Worked shifts on hometown ambulance (an Advanced Life Support, transporting and first response agency) as an EMT-Basic. Left service to attend university.",
+        "highlights": [
+          ""
+        ]
+      },
+      {"organization": "Yale-New Haven Hospital",
+      "position": "Student Volunteer",
+      "website": "",
+      "startDate": "2013-05-01",
+      "endDate": "2013-08-20",
+      "summary": "Worked in several nursing wards and patient transport, learned about hospital care in a non-emergency setting, total 200 hours of service.",
+      "highlights": [
+        ""
+      ]
+      },
+      {"organization": "Norwalk Hospital",
+      "position": "Student Volunteer",
+      "website": "",
+      "startDate": "2010-05-01",
+      "endDate": "2011-08-20",
+      "summary": "Volunteering in volunteer transport and ambulatory surgery, 100 hours of service.",
+      "highlights": [
+        ""
+      ]
+      }
+  ],
+
+    "education": [
+      {"institution": "The Ohio State University, College of Medicine",
+      "area": "Medicine",
+      "studyType": "M.D.",
+      "startDate": "2018-08-01",
+      "endDate": "2022-05-01",
+      "gpa": "",
+      "courses": [
+      ]
+      },
+      {"institution": "University of Cambridge, Churchill College",
+      "area": "Translational Biomedical Research",
+      "studyType": "M.Phil.",
+      "startDate": "2017-08-01",
+      "endDate": "2018-07-01",
+      "gpa": "",
+      "courses": [
+      ]
+      },
+      {"institution": "Cornell University, College of Engineering",
+      "area": "Biomedical Engineering",
+      "studyType": "M.Eng.",
+      "startDate": "2016-08-01",
+      "endDate": "2017-06-01",
+      "gpa": "3.97",
+      "courses": [
+      ]
+      },
+      {"institution": "Cornell University, College of Arts & Sciences",
+      "area": "Chemistry & Chemical Biology / Biological Sciences with Concentration in Biochemistry",
+      "studyType": "B.A. / B.A.",
+      "startDate": "2013-08-01",
+      "endDate": "2017-01-01",
+      "gpa": "3.90",
+      "courses": [
+      ]
+     },
+     {"institution": "Tompkins Cortland Community College",
+      "area": "Advanced EMT Certification Course",
+      "studyType": "",
+      "startDate": "2014-08-01",
+      "endDate": "2014-12-31",
+      "gpa": "",
+      "courses": [
+      ]
+     },
+     {"institution": "University of Connecticut",
+      "area": "Early College Program",
+      "studyType": "",
+      "startDate": "2012-08-27",
+      "endDate": "2013-05-11",
+      "gpa": "4.0",
+      "courses": ["CHEM 2443 - Organic Chemistry I",
+        "CHEM 2444 - Organic Chemistry II"
+      ]
+     },
+     {"institution": "Staples High School",
+      "area": "High School Degree",
+      "studyType": "",
+      "startDate": "2009-08-01",
+      "endDate": "2013-6-01",
+      "gpa": "4.2",
+      "courses": [
+      ]
+     },
+     {"institution": "Bridgeport Hospital",
+      "area": "EMT-Basic Certification Course",
+      "studyType": "",
+      "startDate": "2012-06-01",
+      "endDate": "2012-08-20",
+      "gpa": "",
+      "courses": [
+      ]
+     }
+    ],
+
+    "awards": [
+      {"title": "Cornell University Class of 2017 Banner Bearer",
+        "date": "2017-05-01",
+        "awarder": "Cornell University",
+        "summary": "Awarded as one of two banner bearers for the Class of 2017 graduation procession."
+      },
+      {"title": "Best Entrepreneurship, Best Applied Design, Best Environmental Project, Gold Medal",
+      "date": "2015-09-01",
+      "awarder": "Genetically Engineered Machines (iGEM), International Competition",
+      "summary": "Awarded in athe annual international undergraduate and graduate synthetic biology competition of iGEM while the Business Team Lead of Cornell iGEM, for a multi-targeted approach to the reduction of bacterial cold water disease in salmonid fish."
+      },
+      {"title": "Meinig Family Cornell National Scholar",
+      "date": "2015-08-01",
+      "awarder": "Cornell Commitment Fellowships",
+      "summary": "One of four rising junior undergraduates selected for admission into the Meinig Family Cornell National Scholars program, a merit-based scholarship to foster community leadership."
+      },
+      {"title": "Zeta Psi Scholars in New York City Fellow",
+      "date": "2014-06-01",
+      "awarder": "Zeta Psi Educational Foundation",
+      "summary": "Summer scholarship funding to offset living expenses of an unpaid internship in New York City during Summer 2014."
+      },
+      {"title": "Zeta Psi Educational Foundation Scholarship",
+      "date": "2014-04-01",
+      "awarder": "Zeta Psi Educational Foundation",
+      "summary": "Merit- and need-based tuition scholarship for undergraduate study."
+      },
+      {"title": "Finalist, Cornell Venture Challenge",
+      "date": "2014-04-01",
+      "awarder": "BR Venture Fund",
+      "summary": "Finalist in venture competition, for a project involving a redesign of the spinal pedicle probe in spinal fixation surgeries."
+      },
+      {"title": "Pauline & Irving Tanner Dean's Scholar",
+      "date": "2013-08-01",
+      "awarder": "Cornell University College of Arts & Sciences",
+      "summary": "Merit award presented to 2% of admitted students to Cornell University's College of Arts & Sciences on admission to the Class of 2017."
+      },
+      {"title": "National AP Scholar, AP Scholar with Distinction",
+        "date": "2013-06-01",
+        "awarder": "CollegeBoard",
+        "summary": "Awarded for completing at least 8 AP exams with a high average score (all scores earned were 5/5)."
+      },  
+      {"title": "Latin Honor Society",
+        "date": "2012-08-01",
+        "awarder": "Staples High School",
+        "summary": "Awarded for academic achievement in Latin coursework throughout high school."
+      }      
+    ],
+
+    "publications": [{
+      "name": "Validation of a new model for estimating glomerular filtration rate in patients with cancer.",
+      "publisher": "Journal of Clinical Oncology",
+      "releaseDate": "2018-05-01",
+      "website": "http://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.2565",
+      "summary": "Williams, E., Geisler, R. S., Beh, I., Bertelli, G., Cathomas, R., Dooley, M. J., ... & Mark, P. 'Validation of a new model for estimating glomerular filtration rate in patients with cancer.' Journal of Clinical Oncology 36, no. 15 (May 2018) 2565-2565."
+    }],
+
+    "skills": [
+      {"name": "Web Development",
+      "level": "Beginner-Intermediate",
+      "keywords": [
+        "HTML5",
+        "CSS3/Bootstrap",
+        "Javascript (jQuery, Node.js, Canvas.js",
+        "PHP",
+        "MySQL",
+        "Python3/Django",
+        "Wordpress",
+        "Git integration"
+      ]
+    },
+    {"name": "3D Modeling and Printing",
+      "level": "Beginner",
+      "keywords": [
+        "OctoPi integration",
+        "Creality Ender 3",
+        "Autodesk Fusion 360",
+        "Functional printing"
+      ]
+    },
+    {"name": "Photography and film",
+      "level": "Intermediate",
+      "keywords": [
+        "Photogrammetry",
+        "Portrait photography",
+        "Macro photography"
+      ]
+    }
+  ],
+
+    "languages": [
+      {"language": "English",
+      "fluency": "Native speaker"
+      },
+      {"language": "Spanish",
+      "fluency": "Conversational"
+      }
+  ],
+    
+    "interests": [{
+      "name": "Emerging technologies",
+      "keywords": [
+        "Virtual and augmented reality",
+        "Open source projects",
+        "Applications of educational technology to professionals, students, patients, and laypeople",
+        "Medical device development"
+      ]
+    },
+    {
+      "name": "Medical Finance and Leadership",
+      "keywords": [
+        "Insurance and reimbursement",
+        "Equity and bond market investing",
+        "Loan management and repayment options",
+        "Administrative role of physicians in medical education and legislative policies"
+      ]
+    },
+    {
+      "name": "Music",
+      "keywords": [
+        "Piano",
+        "Guitar"
+      ]
+    }
+  ],
+
+    "references": [{
+      "name": "",
+      "reference": ""
+    }]
+  }
