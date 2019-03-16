@@ -6,7 +6,7 @@
       "email": "reed.geisler@gmail.com",
       "phone": "(203) 505-4301",
       "website": "https://reedismy.name",
-      "summary": "Hello! I am a first-year medical student at The Ohio State University College of Medicine that is strongly interested in developing applications of developed and emerging technologies to healthcare. Below is my CV, along with a brief description of most activities that I have been fortunate enough to experience and be involved with.",
+      "summary": "Hello! I am a first-year medical student at The Ohio State University College of Medicine that is strongly interested in developing applications of novel and emerging technologies to healthcare. Below is my CV, along with a brief description of most activities that I have been fortunate enough to experience and be involved with. In case you would like to pursue a similar project, feel free to base your work on my Github repository for this website.",
       "location": {
         "address": "1478 Michigan Avenue",
         "postalCode": "43201",
@@ -19,7 +19,12 @@
         "network": "Facebook",
         "username": "reed.geisler",
         "url": "https://www.facebook.com/reed.geisler"
-      }
+        },
+        {
+        "network": "Github",
+        "username": "reedgeisler",
+        "url": "https://github.com/GwynplaineLLC/PortfolioTestSite"
+        }
       ]
     },
 
@@ -30,7 +35,7 @@
       "website": "",
       "startDate": "2017-05-01",
       "endDate": "",
-      "summary": "This is an LLC I've established to house side projects and pursuits. This primarily involves on-demand 3D printing services and the pending launch of an educational healthcare-related YouTube channel",
+      "summary": "This is an LLC I've established to house side projects and pursuits. This primarily involves on-demand 3D printing services and the pending launch of an educational healthcare-related YouTube channel.",
       "highlights": [
       ]
     },
