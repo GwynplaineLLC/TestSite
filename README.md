@@ -1,5 +1,11 @@
 # Eloquent [![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
 
+---
+
+This is not created by me, GwynplaineLLC - I am simply hosting the readme for the JSONResume Eloquent theme to set up this test resume/portfolio website in the hopes that others may benefit from their work. Best of luck!
+
+---
+
 An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
 
 [![Theme screenshot](raw/theme-screenshot.png)](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
