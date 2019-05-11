@@ -6,7 +6,7 @@
       "email": "reed.geisler@gmail.com",
       "phone": "(203) 505-4301",
       "website": "https://reedismy.name",
-      "summary": "Hello! I am a first-year medical student at The Ohio State University College of Medicine that is strongly interested in developing applications of novel and emerging technologies to healthcare. Below is my CV, along with a brief description of most activities that I have been fortunate enough to experience and be involved with. In case you would like to pursue a similar project, feel free to base your work on my Github repository for this website.",
+      "summary": "Hello! I am a second-year medical student at The Ohio State University College of Medicine that is strongly interested in developing applications of novel and emerging technologies to healthcare. Below is my CV, along with a brief description of most activities that I have been fortunate enough to experience and be involved with. In case you would like to design a similar CV, feel free to base your work on my Github repository for this website. Credit goes to the JSONResume community for the backend design of this CV.",
       "location": {
         "address": "1478 Michigan Avenue",
         "postalCode": "43201",
@@ -29,19 +29,59 @@
     },
 
     "work": [
-      {
-      "company": "Gwynplaine LLC",
-      "position": "Manager",
+     {
+      "company": "Ultrasound Research Interest Group",
+      "position": "Co-President",
       "website": "",
-      "startDate": "2017-05-01",
+      "startDate": "2019-05-05",
       "endDate": "",
-      "summary": "This is an LLC I've established to house side projects and pursuits. This primarily involves on-demand 3D printing services and the pending launch of an educational healthcare-related YouTube channel.",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "STEM in Medicine",
+      "position": "Treasurer and Vice President",
+      "website": "",
+      "startDate": "2019-02-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Student Council",
+      "position": "Elected Student Representative",
+      "website": "",
+      "startDate": "2019-05-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Anesthesiology Interest Group",
+      "position": "Events Coordinator",
+      "website": "",
+      "startDate": "2019-05-10",
+      "endDate": "",
+      "summary": "",
       "highlights": [
       ]
     },
     {
       "company": "Surgery Interest Group",
       "position": "Treasurer",
+      "website": "",
+      "startDate": "2019-01-01",
+      "endDate": "",
+      "summary": "",
+      "highlights": [
+      ]
+    },
+    {
+      "company": "Internal Medicine Ultrasound Community of Practice",
+      "position": "Research Coordinator",
       "website": "",
       "startDate": "2019-01-01",
       "endDate": "",
@@ -74,13 +114,13 @@
       "position": "Member",
       "website": "",
       "startDate": "2018-10-12",
-      "endDate": "",
+      "endDate": "2019-04-30",
       "summary": "",
       "highlights": [
       ]
     },
     {
-      "company": "The Ohio State Univesrity College of Medicine Department of Educational Technology",
+      "company": "The Ohio State University College of Medicine Department of Educational Technology",
       "position": "Student Collaborator",
       "website": "",
       "startDate": "2018-09-01",
@@ -472,6 +512,11 @@
     ],
 
     "awards": [
+      {"title": "Roessler Medical Student Research Scholarship",
+        "date": "2019-05-01",
+        "awarder": "The Ohio State University College of Medicine",
+        "summary": "Awarded a competitive summer research scholarship for the study of white matter recovery following ischemic stroke."
+      },
       {"title": "Cornell University Class of 2017 Banner Bearer",
         "date": "2017-05-01",
         "awarder": "Cornell University",
@@ -571,7 +616,7 @@
     
     "interests": [{
       "name": "Emerging technologies",
-      "keywords": [
+      "keywords": [ "3D Printing",
         "Virtual and augmented reality",
         "Open source projects",
         "Applications of educational technology to professionals, students, patients, and laypeople",
