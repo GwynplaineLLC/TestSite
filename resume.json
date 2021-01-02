@@ -567,7 +567,7 @@
 
     "publications": [
       {
-        "name": "Thoracoabdominal Pneumatosis Complicating a Colonoscoy",
+        "name": "Thoracoabdominal Pneumatosis Complicating a Colonoscopy",
         "publisher": "Chest Journal",
         "releaseDate": "2020-07-26",
         "website": "https://journal.chestnet.org/article/S0012-3692(20)33950-7/fulltext",
@@ -642,9 +642,8 @@
         "releaseDate": "2017-06-01",
         "website": "",
         "summary": "Schneider, S., Zhang, X., Geisler, R. 'Prophylactic Dressing for the Prevention of Pressure Ulcers.' Presented at: Cornell University M.Eng. Final Project Conference, May 2017."
-      },
+      }
   ],
-
     "skills": [
       {"name": "Web Development",
       "level": "Beginner-Intermediate",
@@ -687,7 +686,9 @@
       }
   ],
     
-    "interests": [{
+    "interests": 
+    [
+      {
       "name": "Emerging technologies",
       "keywords": [ "3D Printing",
         "Virtual and augmented reality",
@@ -703,5 +704,5 @@
         "Guitar"
       ]
     }
-  ],
-  }
+  ]
+}
