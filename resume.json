@@ -6,9 +6,9 @@
       "email": "reed.geisler@gmail.com",
       "phone": "(203) 505-4301",
       "website": "https://reedismy.name",
-      "summary": "Hello! I am a second-year medical student at The Ohio State University College of Medicine that is strongly interested in developing applications of novel and emerging technologies to healthcare. Below is my CV, along with a brief description of most activities that I have been fortunate enough to experience and be involved with. In case you would like to design a similar CV, feel free to base your work on my Github repository for this website. Credit goes to the JSONResume community for the backend design of this CV.",
+      "summary": "Hello! I am a third-year medical student at The Ohio State University College of Medicine.",
       "location": {
-        "address": "1478 Michigan Avenue",
+        "address": "1498 Belmont Avenue",
         "postalCode": "43201",
         "city": "Columbus",
         "countryCode": "US",
@@ -29,13 +29,33 @@
     },
 
     "work": [
-     {
+      {
+        "company": "Student Council",
+        "position": "Class President, Elected Student Representative",
+        "website": "",
+        "startDate": "2019-05-01",
+        "endDate": "",
+        "summary": "Elected Class Presdident for third-year medical students, member of academic policy and facilities committees.",
+        "highlights": [
+        ]
+      },
+      {
+        "company": "AAMC Organization of Student Representatives",
+        "position": "School Representative",
+        "website": "",
+        "startDate": "2019-08-01",
+        "endDate": "",
+        "summary": "Appointed representative to the American Association of Medical Colleges Organization of Student Representatives.",
+        "highlights": [
+        ]
+      },
+      {
       "company": "Ultrasound Research Interest Group",
       "position": "Co-President",
       "website": "",
       "startDate": "2019-05-05",
-      "endDate": "",
-      "summary": "",
+      "endDate": "2020-05-05",
+      "summary": "Established workflow for project pipeline.",
       "highlights": [
       ]
     },
@@ -44,28 +64,18 @@
       "position": "Treasurer and Vice President",
       "website": "",
       "startDate": "2019-02-01",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-      ]
-    },
-    {
-      "company": "Student Council",
-      "position": "Elected Student Representative",
-      "website": "",
-      "startDate": "2019-05-01",
-      "endDate": "",
-      "summary": "",
+      "endDate": "2020-02-01",
+      "summary": "Established program to collaborate with engineering school design projects.",
       "highlights": [
       ]
     },
     {
       "company": "Anesthesiology Interest Group",
-      "position": "Events Coordinator",
+      "position": "Vice President, Events Coordinator",
       "website": "",
       "startDate": "2019-05-10",
       "endDate": "",
-      "summary": "",
+      "summary": "Held procedural skills events to expose students to anesthesiology.",
       "highlights": [
       ]
     },
@@ -74,8 +84,8 @@
       "position": "Treasurer",
       "website": "",
       "startDate": "2019-01-01",
-      "endDate": "",
-      "summary": "",
+      "endDate": "2020-01-01",
+      "summary": "Established mentorship program connecting medical students and residents.",
       "highlights": [
       ]
     },
@@ -84,8 +94,8 @@
       "position": "Research Coordinator",
       "website": "",
       "startDate": "2019-01-01",
-      "endDate": "",
-      "summary": "",
+      "endDate": "2020-01-01",
+      "summary": "Focused on applications of ultrasound to critical care and internal medicine.",
       "highlights": [
       ]
     },
@@ -94,18 +104,18 @@
       "position": "Treasurer",
       "website": "",
       "startDate": "2019-01-01",
-      "endDate": "",
-      "summary": "",
+      "endDate": "2020-01-01",
+      "summary": "Advocated for access to abortion in Ohio.",
       "highlights": [
       ]
     },
     {
       "company": "Movies in Meiling",
-      "position": "Manager",
+      "position": "Co-Founder",
       "website": "",
       "startDate": "2018-09-01",
-      "endDate": "",
-      "summary": "",
+      "endDate": "2019-09-01",
+      "summary": "Organized movie events for medical student wellness.",
       "highlights": [
       ]
     },
@@ -115,7 +125,7 @@
       "website": "",
       "startDate": "2018-10-12",
       "endDate": "2019-04-30",
-      "summary": "",
+      "summary": "Joined program for more in-depth ultrasound experience as a medical student.",
       "highlights": [
       ]
     },
@@ -125,7 +135,7 @@
       "website": "",
       "startDate": "2018-09-01",
       "endDate": "2019-01-01",
-      "summary": "Initiated and completed a migration of lecture media resources onto a platform to consolidate lecture materials and allow additional functionality for students (e.g. playback speed modulation).",
+      "summary": "Initiated and completed a migration of lecture media resources onto a platform to consolidate lecture materials and allow additional functionality for students.",
       "highlights": [
       ]
     },
@@ -216,7 +226,7 @@
       "website": "",
       "startDate": "2015-08-01",
       "endDate": "2017-05-25",
-      "summary": "Worked for four semesters as an undergraduate and graduate teaching assistant in PHYS 1101-1102, the course sequence for students self-teaching ('Auto-tutorial') Introductory Physics. Due to the necessarily open curriculum of the course and lack of lectures, I worked with several other teaching assistants to establish weekly review sessions, staff the course study/lab space, and address student concerns re:lab equipment and demos. I was one of the highest-rated teaching assistants for all four semesters of my role.",
+      "summary": "Worked for four semesters as an undergraduate and graduate teaching assistant in PHYS 1101-1102, the course sequence for students self-teaching ('Auto-tutorial') Introductory Physics. Due to the necessarily open curriculum of the course and lack of lectures, I worked with several other teaching assistants to establish weekly review sessions, staff the course study/lab space, and address student concerns re:lab equipment and demos. One of the highest-rated teaching assistants for all four semesters.",
       "highlights": [
       ]
     },
@@ -256,7 +266,7 @@
       "website": "",
       "startDate": "2015-08-01",
       "endDate": "2016-05-25",
-      "summary": "",
+      "summary": "Organized fundraising for students to attend service-learning trips for rural communities in Nicaragua.",
       "highlights": [
       ]
     },
@@ -266,17 +276,7 @@
       "website": "",
       "startDate": "2014-05-01",
       "endDate": "2016-05-25",
-      "summary": "",
-      "highlights": [
-      ]
-    },
-    {
-      "company": "Zeta Psi Fraternity",
-      "position": "Risk Manager, Scholarship Chair",
-      "website": "2015-05-25",
-      "startDate": "2014-05-01",
-      "endDate": "",
-      "summary": "",
+      "summary": "Worked as sober monitor and trained employees to ensure a safe environment at college events.",
       "highlights": [
       ]
     },
@@ -286,7 +286,7 @@
       "website": "",
       "startDate": "2014-01-01",
       "endDate": "2014-05-25",
-      "summary": "",
+      "summary": "Paid tutor for study groups of introductory biology coursework.",
       "highlights": [
       ]
     },
@@ -296,7 +296,7 @@
       "website": "",
       "startDate": "2013-08-20",
       "endDate": "2014-05-25",
-      "summary": "",
+      "summary": "Organized events and maintenance at undergraduate housing communities.",
       "highlights": [
       ]
     },
@@ -306,7 +306,7 @@
       "website": "",
       "startDate": "2013-08-31",
       "endDate": "2014-04-01",
-      "summary": "",
+      "summary": "Performed low=level duties for lab maintenance.",
       "highlights": [
       ]
     }
@@ -317,12 +317,22 @@
         "position": "Community Health Education Project Lead",
         "website": "",
         "startDate": "2019-01-19",
-        "endDate": "",
-        "summary": "",
+        "endDate": "2020-01-19",
+        "summary": "Led a project to facilitate dental care screening and access to patients at a free clinic.",
         "highlights": [
           ""
-        ]
-        },
+       ]
+      },
+      {"organization": "Columbus Free Clinic",
+        "position": "Medical Student Volunteer",
+        "website": "",
+        "startDate": "2019-01-19",
+        "endDate": "2020-01-19",
+        "summary": "Biweekly medical student volunteer at Columbus Free Clinic.",
+        "highlights": [
+          ""
+       ]
+      },
       {"organization": "Cornell University Emergency Medical Services",
         "position": "Emergency Medical Technician",
         "website": "",
@@ -338,37 +348,37 @@
         "website": "",
         "startDate": "2014-08-01",
         "endDate": "2015-05-20",
-        "summary": "Worked on Dryden and Bangs ambulance services as Advanced EMT student, leading response to Advanced Life Support (ALS) and Basic Life Support (BLS) emergencies",
+        "summary": "Worked on Dryden and Bangs ambulance services as Advanced EMT student, leading response to Advanced Life Support (ALS) and Basic Life Support (BLS) emergencies.",
         "highlights": [
           ""
         ]
         },
       {"organization": "Cornell Prison Education Program",
-       "position": "Emergency Medical Technician",
+       "position": "Teaching Assistant",
        "website": "",
        "startDate": "2014-08-01",
        "endDate": "2015-05-20",
-       "summary": "",
+       "summary": "Taught students through Algebra, Mindfulness & Meditation, and a study hall course at Auburn Correctional Facility.",
         "highlights": [
           ""
         ]
         },
       {"organization": "Alpha Phi Omega Service Fraternity",
-        "position": "Emergency Medical Technician",
+        "position": "Member",
         "website": "",
         "startDate": "2014-08-01",
         "endDate": "2015-05-20",
-        "summary": "",
+        "summary": "Volunteered weekly for various activities (e.g. Second Wind cottages, street clean-up).",
         "highlights": [
           ""
         ]
         },
         {"organization": "Empathy, Assistance, and Referral Service (EARS)",
-          "position": "Emergency Medical Technician",
+          "position": "Trainee",
           "website": "",
           "startDate": "2014-08-01",
           "endDate": "2015-05-20",
-          "summary": "",
+          "summary": "Trained to work on undergraduate college crisis line.",
           "highlights": [
             ""
           ]
@@ -378,7 +388,7 @@
       "website": "",
       "startDate": "2014-05-01",
       "endDate": "2014-08-20",
-      "summary": "Worked as Emergency Department greeter and volunteer as part of Cornell's Summer in NYC Program. Also shadowed Anesthesiology, Cardiology, Cardiothoracic Surgery, and Pediatric Emergency specialties.",
+      "summary": "Worked as Emergency Department greeter and volunteer.",
       "highlights": [
         ""
       ]
@@ -418,7 +428,7 @@
       "website": "",
       "startDate": "2013-05-01",
       "endDate": "2013-08-20",
-      "summary": "Worked in several nursing wards and patient transport, learned about hospital care in a non-emergency setting, total 200 hours of service.",
+      "summary": "Worked in several nursing wards and patient transport, learned about hospital care in a non-emergency setting.",
       "highlights": [
         ""
       ]
@@ -428,7 +438,7 @@
       "website": "",
       "startDate": "2010-05-01",
       "endDate": "2011-08-20",
-      "summary": "Volunteering in volunteer transport and ambulatory surgery, 100 hours of service.",
+      "summary": "Volunteering in patient transport and ambulatory surgery.",
       "highlights": [
         ""
       ]
@@ -469,15 +479,6 @@
       "startDate": "2013-08-01",
       "endDate": "2017-01-01",
       "gpa": "3.90",
-      "courses": [
-      ]
-     },
-     {"institution": "Tompkins Cortland Community College",
-      "area": "Advanced EMT Certification Course",
-      "studyType": "",
-      "startDate": "2014-08-01",
-      "endDate": "2014-12-31",
-      "gpa": "",
       "courses": [
       ]
      },
@@ -564,13 +565,85 @@
       }      
     ],
 
-    "publications": [{
-      "name": "Validation of a new model for estimating glomerular filtration rate in patients with cancer.",
-      "publisher": "Journal of Clinical Oncology",
-      "releaseDate": "2018-05-01",
-      "website": "http://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.2565",
-      "summary": "Williams, E., Geisler, R. S., Beh, I., Bertelli, G., Cathomas, R., Dooley, M. J., ... & Mark, P. 'Validation of a new model for estimating glomerular filtration rate in patients with cancer.' Journal of Clinical Oncology 36, no. 15 (May 2018) 2565-2565."
-    }],
+    "publications": [
+      {
+        "name": "Thoracoabdominal Pneumatosis Complicating a Colonoscoy",
+        "publisher": "Chest Journal",
+        "releaseDate": "2020-07-26",
+        "website": "https://journal.chestnet.org/article/S0012-3692(20)33950-7/fulltext",
+        "summary": "Gilkey, T., Geisler, R., Leipold, C., Corbett, J., Turner, J., Timbadia, P. 'Thoracoabdominal Pneumatosis Complicating a Colonoscopy.' Chest, 158(4). A2037."
+      },     
+      {
+        "name": "Extensive DVT in a Young Male with Persistent Scrotal Infections",
+        "publisher": "Chest Journal",
+        "releaseDate": "2020-07-26",
+        "website": "https://journal.chestnet.org/article/S0012-3692(20)33855-1/fulltext",
+        "summary": "Geisler, R., Gilkey, T., Leipold, C., Romano, N., Dasgupta, A., Timbadia, P. 'Extensive DVT in a Young Male with Persistent Scrotal Infections.' Chest, 158(4). A1929."
+      },      
+      {
+        "name": "Recurrent Spontaneous Pneumothorax in a Young Female Patient",
+        "publisher": "Chest Journal",
+        "releaseDate": "2020-07-26",
+        "website": "https://journal.chestnet.org/article/S0012-3692(20)33354-7/fulltext",
+        "summary": "Geisler, R., Gilkey, T., Leipold, C., Dasgupta, A., Timbadia, P. 'Recurrent Spontaneous Pneumothorax in a Young Female Patient.' Chest, 158(4). A1281."
+      },      
+      {
+        "name": "Returning to Basecamp: Systemizing Student-Driven Ultrasound Research",
+        "publisher": "American Institute of Ultrasound in Medicine",
+        "releaseDate": "2020-07-26",
+        "website": "https://onlinelibrary.wiley.com/doi/10.1002/jum.15373",
+        "summary": "Banks, M., Leupold, M., Geisler, R., Shen, S., Su, J., Menon, R., Bahner, D., Prats, M. 'Returning to Basecamp: Systemizing Student-Driven Ultrasound Research.' Journal of Ultrasound in Medicine. 2020. 39(S1):S1–S223"
+      },      
+      {
+        "name": "Oral Health Screenings for Preventative Health in a Free Clinic Population",
+        "publisher": "University of Miami Department of Community Service, Community Health Leadership Conference",
+        "releaseDate": "2019-12-13",
+        "website": "",
+        "summary": "Geisler, R.S., Yanamadala, V., Mannix, N., Kumar, N., Vardanyan, J., Georgy, M., Patel, I., Konstan, R., Patel, P., Rotenberg, S. 'Oral Health Screenings for Preventative Health in a Free Clinic Population.' In: Proceedings from the University of Miami Department of Community Service Community Health Leadership Conference; December 2019; Miami, FL."
+      },
+      {
+        "name": "Medical Student Sentiment on Increased Clinical Weight in Composite Curricular MSPE Grading Schema",
+        "publisher": "AAMC Annual Meeting, Learn Serve Lead 2019: Group on Student Affairs/Organization of Student Representatives",
+        "releaseDate": "2019-11-08",
+        "website": "",
+        "summary": "Geisler, R.S. 'Medical Student Sentiment on Increased Clinical Weight in Composite Curricular MSPE Grading Schema.' Presented at: AAMC Learn Serve Lead 2019 Conference; November 08, 2019; Phoenix, AZ."
+      },
+      {
+        "name": "Tracking Recovery of the White Matter following Ischemic Stroke",
+        "publisher": "Ohio State 2019 Medical Student Research Office Annual MDSR Research Symposium",
+        "releaseDate": "2019-11-06",
+        "website":"https://medicine.osu.edu/-/media/files/medicine/research/resources/opportunities/md-student-resources/find-a-mentor/2019-mdsrs-awards.pdf",
+        "summary": "Geisler, R.S., Hannawi, Y. 'Tracking Recovery of the White Matter following Ischemic Stroke.' Presented at: Ohio State 2019 Medical Student Research Office Annual MDSR Research Symposium; November 06, 2019; Columbus, OH."
+      },
+      {
+        "name": "Enhancing Medical Student Education Through Technology and Innovation",
+        "publisher": "Ohio State University College of Nursing, Healthcare Innovation and Entrepreneurship Workshop",
+        "releaseDate": "2019-09-23",
+        "website": "",
+        "summary": "Schoeffler, A., Geisler, R., Okoye, K. 'Enhancing Medical Student Education Through Technology and Innovation.' Presented at: The Ohio State Healthcare Innovation and Entrepreneurship Workshop; September 2019; Columbus, OH."
+      },
+      {
+        "name": "Analysis of longitudinal liver function predicts outcome in sorafenib-treated patients with advanced Hepatocellular Carcinoma.",
+        "publisher": "National Cancer Research Institute",
+        "releaseDate": "2018-11-06",
+        "website": "https://abstracts.ncri.org.uk/abstract/analysis-of-longitudinal-liver-function-predicts-outcome-in-sorafenib-treated-patients-with-advanced-hepatocellular-carcinoma/",
+        "summary": "Potts, H., Williams E., Geisler, R.S., Connell, C., Hoare, M., Janowitz, T. 'Analysis of longitudinal liver function predicts outcome in sorafenib-treated patients with advanced Hepatocellular Carcinoma.' Presented at: National Cancer Research Institute Cancer Conference; November 2018; Glasgow, United Kingdom"
+      },
+      {
+        "name": "Validation of a new model for estimating glomerular filtration rate in patients with cancer.",
+        "publisher": "Journal of Clinical Oncology",
+        "releaseDate": "2018-05-01",
+        "website": "http://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.2565",
+        "summary": "Williams, E., Geisler, R. S., Beh, I., Bertelli, G., Cathomas, R., Dooley, M. J., ... & Mark, P. 'Validation of a new model for estimating glomerular filtration rate in patients with cancer.' Journal of Clinical Oncology 36, no. 15 (May 2018) 2565-2565."
+      },
+      {
+        "name": "Prophylactic Dressing for the Prevention of Pressure Ulcers",
+        "publisher": "Cornell University M.Eng. Final Project Conference",
+        "releaseDate": "2017-06-01",
+        "website": "",
+        "summary": "Schneider, S., Zhang, X., Geisler, R. 'Prophylactic Dressing for the Prevention of Pressure Ulcers.' Presented at: Cornell University M.Eng. Final Project Conference, May 2017."
+      },
+  ],
 
     "skills": [
       {"name": "Web Development",
@@ -624,15 +697,6 @@
       ]
     },
     {
-      "name": "Medical Finance and Leadership",
-      "keywords": [
-        "Insurance and reimbursement",
-        "Equity and bond market investing",
-        "Loan management and repayment options",
-        "Administrative role of physicians in medical education and legislative policies"
-      ]
-    },
-    {
       "name": "Music",
       "keywords": [
         "Piano",
@@ -640,9 +704,4 @@
       ]
     }
   ],
-
-    "references": [{
-      "name": "",
-      "reference": ""
-    }]
   }
