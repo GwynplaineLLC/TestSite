@@ -1,228 +1,7 @@
-<!doctype html><html lang="en"><head><style class="darkreader darkreader--fallback" media="screen">html, body, body :not(iframe) {
-    background-color: #181a1b !important;
-    border-color: #776e62 !important;
-    color: #e8e6e3 !important;
-}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img {
-    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
-}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
-  background-color: var(--darkreader-inline-bgcolor) !important;
-}
-[data-darkreader-inline-bgimage] {
-  background-image: var(--darkreader-inline-bgimage) !important;
-}
-[data-darkreader-inline-border] {
-  border-color: var(--darkreader-inline-border) !important;
-}
-[data-darkreader-inline-border-bottom] {
-  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
-}
-[data-darkreader-inline-border-left] {
-  border-left-color: var(--darkreader-inline-border-left) !important;
-}
-[data-darkreader-inline-border-right] {
-  border-right-color: var(--darkreader-inline-border-right) !important;
-}
-[data-darkreader-inline-border-top] {
-  border-top-color: var(--darkreader-inline-border-top) !important;
-}
-[data-darkreader-inline-boxshadow] {
-  box-shadow: var(--darkreader-inline-boxshadow) !important;
-}
-[data-darkreader-inline-color] {
-  color: var(--darkreader-inline-color) !important;
-}
-[data-darkreader-inline-fill] {
-  fill: var(--darkreader-inline-fill) !important;
-}
-[data-darkreader-inline-stroke] {
-  stroke: var(--darkreader-inline-stroke) !important;
-}
-[data-darkreader-inline-outline] {
-  outline-color: var(--darkreader-inline-outline) !important;
-}
-[data-darkreader-inline-stopcolor] {
-  stop-color: var(--darkreader-inline-stopcolor) !important;
-}</style><style class="darkreader darkreader--variables" media="screen">:root {
-   --darkreader-neutral-background: #131516;
-   --darkreader-neutral-text: #d8d4cf;
-   --darkreader-selection-background: #004daa;
-   --darkreader-selection-text: #e8e6e3;
-}</style><script class="darkreader darkreader--proxy">(function injectProxy() {
-        document.dispatchEvent(
-            new CustomEvent("__darkreader__inlineScriptsAllowed")
-        );
-        const addRuleDescriptor = Object.getOwnPropertyDescriptor(
-            CSSStyleSheet.prototype,
-            "addRule"
-        );
-        const insertRuleDescriptor = Object.getOwnPropertyDescriptor(
-            CSSStyleSheet.prototype,
-            "insertRule"
-        );
-        const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(
-            CSSStyleSheet.prototype,
-            "deleteRule"
-        );
-        const removeRuleDescriptor = Object.getOwnPropertyDescriptor(
-            CSSStyleSheet.prototype,
-            "removeRule"
-        );
-        const cleanUp = () => {
-            Object.defineProperty(
-                CSSStyleSheet.prototype,
-                "addRule",
-                addRuleDescriptor
-            );
-            Object.defineProperty(
-                CSSStyleSheet.prototype,
-                "insertRule",
-                insertRuleDescriptor
-            );
-            Object.defineProperty(
-                CSSStyleSheet.prototype,
-                "deleteRule",
-                deleteRuleDescriptor
-            );
-            Object.defineProperty(
-                CSSStyleSheet.prototype,
-                "removeRule",
-                removeRuleDescriptor
-            );
-            document.removeEventListener("__darkreader__cleanUp", cleanUp);
-            document.removeEventListener(
-                "__darkreader__addUndefinedResolver",
-                (e) => addUndefinedResolver(e)
-            );
-        };
-        const addUndefinedResolver = (e) => {
-            customElements.whenDefined(e.detail.tag).then(() => {
-                document.dispatchEvent(
-                    new CustomEvent("__darkreader__isDefined", {
-                        detail: {tag: e.detail.tag}
-                    })
-                );
-            });
-        };
-        document.addEventListener("__darkreader__cleanUp", cleanUp);
-        document.addEventListener("__darkreader__addUndefinedResolver", (e) =>
-            addUndefinedResolver(e)
-        );
-        const updateSheetEvent = new Event("__darkreader__updateSheet");
-        function proxyAddRule(selector, style, index) {
-            addRuleDescriptor.value.call(this, selector, style, index);
-            if (
-                this.ownerNode &&
-                !this.ownerNode.classList.contains("darkreader")
-            ) {
-                this.ownerNode.dispatchEvent(updateSheetEvent);
-            }
-            return -1;
-        }
-        function proxyInsertRule(rule, index) {
-            const returnValue = insertRuleDescriptor.value.call(
-                this,
-                rule,
-                index
-            );
-            if (
-                this.ownerNode &&
-                !this.ownerNode.classList.contains("darkreader")
-            ) {
-                this.ownerNode.dispatchEvent(updateSheetEvent);
-            }
-            return returnValue;
-        }
-        function proxyDeleteRule(index) {
-            deleteRuleDescriptor.value.call(this, index);
-            if (
-                this.ownerNode &&
-                !this.ownerNode.classList.contains("darkreader")
-            ) {
-                this.ownerNode.dispatchEvent(updateSheetEvent);
-            }
-        }
-        function proxyRemoveRule(index) {
-            removeRuleDescriptor.value.call(this, index);
-            if (
-                this.ownerNode &&
-                !this.ownerNode.classList.contains("darkreader")
-            ) {
-                this.ownerNode.dispatchEvent(updateSheetEvent);
-            }
-        }
-        Object.defineProperty(
-            CSSStyleSheet.prototype,
-            "addRule",
-            Object.assign({}, addRuleDescriptor, {value: proxyAddRule})
-        );
-        Object.defineProperty(
-            CSSStyleSheet.prototype,
-            "insertRule",
-            Object.assign({}, insertRuleDescriptor, {value: proxyInsertRule})
-        );
-        Object.defineProperty(
-            CSSStyleSheet.prototype,
-            "deleteRule",
-            Object.assign({}, deleteRuleDescriptor, {value: proxyDeleteRule})
-        );
-        Object.defineProperty(
-            CSSStyleSheet.prototype,
-            "removeRule",
-            Object.assign({}, removeRuleDescriptor, {value: proxyRemoveRule})
-        );
-    })()</script><style class="darkreader darkreader--user-agent" media="screen">html {
-    background-color: #181a1b !important;
-}
-html, body, input, textarea, select, button {
-    background-color: #181a1b;
-}
-html, body, input, textarea, select, button {
-    border-color: #736b5e;
-    color: #e8e6e3;
-}
-a {
-    color: #3391ff;
-}
-table {
-    border-color: #545b5e;
-}
-::placeholder {
-    color: #b2aba1;
-}
-input:-webkit-autofill,
-textarea:-webkit-autofill,
-select:-webkit-autofill {
-    background-color: #555b00 !important;
-    color: #e8e6e3 !important;
-}
-::-webkit-scrollbar {
-    background-color: #202324;
-    color: #aba499;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #454a4d;
-}
-::-webkit-scrollbar-thumb:hover {
-    background-color: #575e62;
-}
-::-webkit-scrollbar-thumb:active {
-    background-color: #484e51;
-}
-::-webkit-scrollbar-corner {
-    background-color: #181a1b;
-}
-* {
-    scrollbar-color: #202324 #454a4d;
-}
-::selection {
-    background-color: #004daa !important;
-    color: #e8e6e3 !important;
-}
-::-moz-selection {
-    background-color: #004daa !important;
-    color: #e8e6e3 !important;
-}</style>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:4000/#download -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1, minimal-ui">
   <title>Reed Geisler — Medical Student</title>
 
@@ -234,14 +13,7 @@ select:-webkit-autofill {
      *//*!
      * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=b8de360b20fa3c7e5e9b)
      * Config saved to config.json and https://gist.github.com/b8de360b20fa3c7e5e9b
-     *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print{*,*:before,*:after{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}a[href^="#"]:after,a[href^="javascript:"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100%!important}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}select{background:#fff!important}.navbar{display:none}.btn>.caret,.dropup>.btn>.caret{border-top-color:#000!important}.label{border:1px solid #000}.table{border-collapse:collapse!important}.table td,.table th{background-color:#fff!important}.table-bordered th,.table-bordered td{border:1px solid #ddd!important}}*{box-sizing:border-box}*:before,*:after{box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small{font-weight:400;line-height:1;color:#777}h1,.h1,h2,.h2,h3,.h3{margin-top:20px;margin-bottom:10px}h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small{font-size:65%}h4,.h4,h5,.h5,h6,.h6{margin-top:10px;margin-bottom:10px}h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small{font-size:75%}h1,.h1{font-size:36px}h2,.h2{font-size:30px}h3,.h3{font-size:24px}h4,.h4{font-size:18px}h5,.h5{font-size:14px}h6,.h6{font-size:12px}p{margin:0 0 10px}.lead{margin-bottom:20px;font-size:16px;font-weight:300;line-height:1.4}@media(min-width:768px){.lead{font-size:21px}}small,.small{font-size:85%}mark,.mark{background-color:#fcf8e3;padding:.2em}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.text-nowrap{white-space:nowrap}.text-lowercase{text-transform:lowercase}.text-uppercase{text-transform:uppercase}.text-capitalize{text-transform:capitalize}.text-muted{color:#777}.text-primary{color:#337ab7}a.text-primary:hover{color:#286090}.text-success{color:#3c763d}a.text-success:hover{color:#2b542c}.text-info{color:#31708f}a.text-info:hover{color:#245269}.text-warning{color:#8a6d3b}a.text-warning:hover{color:#66512c}.text-danger{color:#a94442}a.text-danger:hover{color:#843534}.bg-primary{color:#fff;background-color:#337ab7}a.bg-primary:hover{background-color:#286090}.bg-success{background-color:#dff0d8}a.bg-success:hover{background-color:#c1e2b3}.bg-info{background-color:#d9edf7}a.bg-info:hover{background-color:#afd9ee}.bg-warning{background-color:#fcf8e3}a.bg-warning:hover{background-color:#f7ecb5}.bg-danger{background-color:#f2dede}a.bg-danger:hover{background-color:#e4b9b9}.page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}ul,ol{margin-top:0;margin-bottom:10px}ul ul,ol ul,ul ol,ol ol{margin-bottom:0}.list-unstyled{padding-left:0;list-style:none}.list-inline{padding-left:0;list-style:none;margin-left:-5px}.list-inline>li{display:inline-block;padding-left:5px;padding-right:5px}dl{margin-top:0;margin-bottom:20px}dt,dd{line-height:1.42857143}dt{font-weight:700}dd{margin-left:0}@media(min-width:768px){.dl-horizontal dt{float:left;width:160px;clear:left;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dl-horizontal dd{margin-left:180px}}abbr[title],abbr[data-original-title]{cursor:help;border-bottom:1px dotted #777}.initialism{font-size:90%;text-transform:uppercase}blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px solid #eee}blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child{margin-bottom:0}blockquote footer,blockquote small,blockquote .small{display:block;font-size:80%;line-height:1.42857143;color:#777}blockquote footer:before,blockquote small:before,blockquote .small:before{content:'\2014 \00A0'}.blockquote-reverse,blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #eee;border-left:0;text-align:right}.blockquote-reverse footer:before,blockquote.pull-right footer:before,.blockquote-reverse small:before,blockquote.pull-right small:before,.blockquote-reverse .small:before,blockquote.pull-right .small:before{content:''}.blockquote-reverse footer:after,blockquote.pull-right footer:after,.blockquote-reverse small:after,blockquote.pull-right small:after,.blockquote-reverse .small:after,blockquote.pull-right .small:after{content:'\00A0 \2014'}address{margin-bottom:20px;font-style:normal;line-height:1.42857143}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media(min-width:768px){.container{width:750px}}@media(min-width:992px){.container{width:970px}}@media(min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media(min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media(min-width:1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eee}.nav>li.disabled>a{color:#777}.nav>li.disabled>a:hover,.nav>li.disabled>a:focus{color:#777;text-decoration:none;background-color:transparent;cursor:not-allowed}.nav .open>a,.nav .open>a:hover,.nav .open>a:focus{background-color:#eee;border-color:#337ab7}.nav .nav-divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}.nav>li>a>img{max-width:none}.nav-tabs{border-bottom:1px solid #ddd}.nav-tabs>li{float:left;margin-bottom:-1px}.nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}.nav-tabs>li>a:hover{border-color:#eee #eee #ddd}.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{color:#555;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent;cursor:default}.nav-tabs.nav-justified{width:100%;border-bottom:0}.nav-tabs.nav-justified>li{float:none}.nav-tabs.nav-justified>li>a{text-align:center;margin-bottom:5px}.nav-tabs.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media(min-width:768px){.nav-tabs.nav-justified>li{display:table-cell;width:1%}.nav-tabs.nav-justified>li>a{margin-bottom:0}}.nav-tabs.nav-justified>li>a{margin-right:0;border-radius:4px}.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus{border:1px solid #ddd}@media(min-width:768px){.nav-tabs.nav-justified>li>a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0}.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus{border-bottom-color:#fff}}.nav-pills>li{float:left}.nav-pills>li>a{border-radius:4px}.nav-pills>li+li{margin-left:2px}.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{color:#fff;background-color:#337ab7}.nav-stacked>li{float:none}.nav-stacked>li+li{margin-top:2px;margin-left:0}.nav-justified{width:100%}.nav-justified>li{float:none}.nav-justified>li>a{text-align:center;margin-bottom:5px}.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media(min-width:768px){.nav-justified>li{display:table-cell;width:1%}.nav-justified>li>a{margin-bottom:0}}.nav-tabs-justified{border-bottom:0}.nav-tabs-justified>li>a{margin-right:0;border-radius:4px}.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus{border:1px solid #ddd}@media(min-width:768px){.nav-tabs-justified>li>a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0}.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus{border-bottom-color:#fff}}.tab-content>.tab-pane{display:none;visibility:hidden}.tab-content>.active{display:block;visibility:visible}.nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}a.label:hover,a.label:focus{color:#fff;text-decoration:none;cursor:pointer}.label:empty{display:none}.btn .label{position:relative;top:-1px}.label-default{background-color:#777}.label-default[href]:hover,.label-default[href]:focus{background-color:#5e5e5e}.label-primary{background-color:#337ab7}.label-primary[href]:hover,.label-primary[href]:focus{background-color:#286090}.label-success{background-color:#5cb85c}.label-success[href]:hover,.label-success[href]:focus{background-color:#449d44}.label-info{background-color:#5bc0de}.label-info[href]:hover,.label-info[href]:focus{background-color:#31b0d5}.label-warning{background-color:#f0ad4e}.label-warning[href]:hover,.label-warning[href]:focus{background-color:#ec971f}.label-danger{background-color:#d9534f}.label-danger[href]:hover,.label-danger[href]:focus{background-color:#c9302c}.clearfix:before,.clearfix:after,.dl-horizontal dd:before,.dl-horizontal dd:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.nav:before,.nav:after{content:" ";display:table}.clearfix:after,.dl-horizontal dd:after,.container:after,.container-fluid:after,.row:after,.nav:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important;visibility:hidden!important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none!important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none!important}@media(max-width:767px){.visible-xs{display:block!important}table.visible-xs{display:table}tr.visible-xs{display:table-row!important}th.visible-xs,td.visible-xs{display:table-cell!important}}@media(max-width:767px){.visible-xs-block{display:block!important}}@media(max-width:767px){.visible-xs-inline{display:inline!important}}@media(max-width:767px){.visible-xs-inline-block{display:inline-block!important}}@media(min-width:768px) and (max-width:991px){.visible-sm{display:block!important}table.visible-sm{display:table}tr.visible-sm{display:table-row!important}th.visible-sm,td.visible-sm{display:table-cell!important}}@media(min-width:768px) and (max-width:991px){.visible-sm-block{display:block!important}}@media(min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline!important}}@media(min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block!important}}@media(min-width:992px) and (max-width:1199px){.visible-md{display:block!important}table.visible-md{display:table}tr.visible-md{display:table-row!important}th.visible-md,td.visible-md{display:table-cell!important}}@media(min-width:992px) and (max-width:1199px){.visible-md-block{display:block!important}}@media(min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline!important}}@media(min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block!important}}@media(min-width:1200px){.visible-lg{display:block!important}table.visible-lg{display:table}tr.visible-lg{display:table-row!important}th.visible-lg,td.visible-lg{display:table-cell!important}}@media(min-width:1200px){.visible-lg-block{display:block!important}}@media(min-width:1200px){.visible-lg-inline{display:inline!important}}@media(min-width:1200px){.visible-lg-inline-block{display:inline-block!important}}@media(max-width:767px){.hidden-xs{display:none!important}}@media(min-width:768px) and (max-width:991px){.hidden-sm{display:none!important}}@media(min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}@media(min-width:1200px){.hidden-lg{display:none!important}}.visible-print{display:none!important}@media print{.visible-print{display:block!important}table.visible-print{display:table}tr.visible-print{display:table-row!important}th.visible-print,td.visible-print{display:table-cell!important}}.visible-print-block{display:none!important}@media print{.visible-print-block{display:block!important}}.visible-print-inline{display:none!important}@media print{.visible-print-inline{display:inline!important}}.visible-print-inline-block{display:none!important}@media print{.visible-print-inline-block{display:inline-block!important}}@media print{.hidden-print{display:none!important}}*{-webkit-tap-highlight-color:transparent}html,body,button{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased}a[href],button{-ms-touch-action:manipulation;touch-action:manipulation;-webkit-tap-highlight-color:transparent}[class^=icon-],[class*=" icon-"]{display:inline-block;font:normal normal normal 14px/1 'icomoon';font-size:inherit;text-rendering:auto}html{background-color:#292f33}body{min-width:320px;font-size:16px;font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:300;background-color:#e1e8ed;color:#292f33}::-moz-selection{background:#c2f990}::selection{background:#c2f990}::-moz-selection{background:#c2f990}h1{font-size:30px;margin-top:5px;margin-bottom:5px}h2{font-size:24px;margin-top:5px;margin-bottom:5px}h3{font-size:22px}.anchor-link{display:block;text-decoration:none}.anchor-link:hover,.anchor-link:focus{text-decoration:none}.anchor-icon{display:none;position:relative;top:-3px;font-size:50%;color:rgba(0,0,0,.5)}.anchor-icon:before{content:'#'}.anchor-link:hover .anchor-icon,.anchor-link:focus .anchor-icon{display:inline;color:rgba(0,0,0,.5);text-decoration:none}.anchor-link.item-anchor{float:right;font-size:14px;color:#e1e8ed}.anchor-link.item-anchor:hover,.anchor-link.item-anchor:focus{color:#66757f}h4{font-size:16px}.text-muted{color:#66757f}.duration-counter{white-space:nowrap}blockquote{margin:0;padding:10px 0 10px 10px;border-left:5px solid #e1e8ed}@media(min-width:768px){blockquote{padding:10px 20px}}blockquote footer{color:#66757f}blockquote footer cite{font-style:normal}hr{margin-top:10px;margin-bottom:10px}.nav>li>a{padding:8px 15px}.nav>li>a:hover,.nav>li>a:focus{outline:none;background-color:#e1e8ed}.nav>li>a:active{background-color:#ccd6dd}.icon-lg{font-size:1.33333em;line-height:.75em;vertical-align:-15%}.icon-2x{font-size:2em}.card-wrapper{padding:10px}.card{background-color:#fff;background-color:rgba(255,255,255,.9);box-shadow:0 0 2px rgba(0,0,0,.3);padding:10px}@media print{.basics a[href]:after{content:none!important}.profile-pic{border-radius:0!important;margin-bottom:20px}.anchor-link.item-anchor{display:none}}.profile-pic{width:128px;height:128px;margin-top:5px;margin-bottom:5px}@media(min-width:992px){h1,h2,.profile-pic{margin-top:10px;margin-bottom:10px}}.basics-item .icon,.profile-item .icon{position:absolute;top:50%;margin-top:-10px}.basics-item .info,.profile-item .info{position:relative;left:30px;padding-right:30px;vertical-align:middle}.social-profiles .profile-item a{padding:5px 15px;color:inherit;text-align:left}@media(min-width:768px){.social-profiles .profile-item a{padding:5px;text-align:center}.profile-item .icon{position:static;margin-top:0}.profile-item .icon-lg{font-size:2em}}.network-github{color:#454545}.network-twitter{color:#3cf}.network-linkedin{color:#007bb6}.network-skype{color:#12a5f4}.network-stackoverflow{color:#8e8e92}.network-soundcloud{color:#e8822d}.network-pinterest{color:#bd091f}.network-vimeo{color:#17b3e8}.network-behance{color:#2c98cf}.network-codepen{color:#1c1c1c}.network-foursquare{color:#fa4778}.network-reddit{color:#545454}.network-spotify{color:#acd200}.network-dribbble{color:#ce366f}.network-facebook{color:#4b6daa}.network-angellist{color:#000}.network-bitbucket{color:#205081}.profile-card-wrapper{position:relative;padding-bottom:0;padding-right:10px}@media(min-width:992px){.profile-card-wrapper{position:fixed;height:100%;padding-right:0;padding-bottom:10px;overflow-y:hidden}.card-wrapper{float:right}}.profile-card-wrapper+.card-wrapper{padding-bottom:0}.detail{padding:5px}.detail h3{position:static;left:-44px}.detail-highlights{list-style-type:none;padding-left:0}.detail-highlights li{padding-left:1em}.detail-highlights li:before{content:'-';display:inline-block;width:1em;margin-left:-1em;color:#66757f;font-weight:700}@media(min-width:768px){.detail{padding:10px 10px 10px 50px}.detail h3{position:relative}}.detail h3 i{min-width:40px;min-height:20px;text-align:center}.detail-item{padding:10px 0;margin:0 3px;border-top:1px solid #ccd6dd}.detail-item-content{padding:0}@media(min-width:768px){.detail-item-content{padding-right:10px}.detail-item-content.col-sm-9{border-right:1px solid #ccd6dd}}.detail-highlights li{margin-bottom:2px}.labels{line-height:2;word-spacing:5px}.label-keyword{font-size:inherit;background-color:#7eb0db;margin-right:5px}#skills h4,#interests h4{font-weight:700}#references .detail-item{border:none}  </style><style class="darkreader darkreader--sync" media="screen"></style><meta name="darkreader" content="b18fd59dc7e85e9a979d05452177d844"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
-    background-color: #7b5300 !important;
-    border-color: #d8b013 !important;
-    color: #f3e8c8 !important;
-}
-::placeholder {
-    opacity: 0.5 !important;
-}</style>
+     *//*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print{*,*:before,*:after{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}a[href^="#"]:after,a[href^="javascript:"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100%!important}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}select{background:#fff!important}.navbar{display:none}.btn>.caret,.dropup>.btn>.caret{border-top-color:#000!important}.label{border:1px solid #000}.table{border-collapse:collapse!important}.table td,.table th{background-color:#fff!important}.table-bordered th,.table-bordered td{border:1px solid #ddd!important}}*{box-sizing:border-box}*:before,*:after{box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small{font-weight:400;line-height:1;color:#777}h1,.h1,h2,.h2,h3,.h3{margin-top:20px;margin-bottom:10px}h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small{font-size:65%}h4,.h4,h5,.h5,h6,.h6{margin-top:10px;margin-bottom:10px}h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small{font-size:75%}h1,.h1{font-size:36px}h2,.h2{font-size:30px}h3,.h3{font-size:24px}h4,.h4{font-size:18px}h5,.h5{font-size:14px}h6,.h6{font-size:12px}p{margin:0 0 10px}.lead{margin-bottom:20px;font-size:16px;font-weight:300;line-height:1.4}@media(min-width:768px){.lead{font-size:21px}}small,.small{font-size:85%}mark,.mark{background-color:#fcf8e3;padding:.2em}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.text-nowrap{white-space:nowrap}.text-lowercase{text-transform:lowercase}.text-uppercase{text-transform:uppercase}.text-capitalize{text-transform:capitalize}.text-muted{color:#777}.text-primary{color:#337ab7}a.text-primary:hover{color:#286090}.text-success{color:#3c763d}a.text-success:hover{color:#2b542c}.text-info{color:#31708f}a.text-info:hover{color:#245269}.text-warning{color:#8a6d3b}a.text-warning:hover{color:#66512c}.text-danger{color:#a94442}a.text-danger:hover{color:#843534}.bg-primary{color:#fff;background-color:#337ab7}a.bg-primary:hover{background-color:#286090}.bg-success{background-color:#dff0d8}a.bg-success:hover{background-color:#c1e2b3}.bg-info{background-color:#d9edf7}a.bg-info:hover{background-color:#afd9ee}.bg-warning{background-color:#fcf8e3}a.bg-warning:hover{background-color:#f7ecb5}.bg-danger{background-color:#f2dede}a.bg-danger:hover{background-color:#e4b9b9}.page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}ul,ol{margin-top:0;margin-bottom:10px}ul ul,ol ul,ul ol,ol ol{margin-bottom:0}.list-unstyled{padding-left:0;list-style:none}.list-inline{padding-left:0;list-style:none;margin-left:-5px}.list-inline>li{display:inline-block;padding-left:5px;padding-right:5px}dl{margin-top:0;margin-bottom:20px}dt,dd{line-height:1.42857143}dt{font-weight:700}dd{margin-left:0}@media(min-width:768px){.dl-horizontal dt{float:left;width:160px;clear:left;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dl-horizontal dd{margin-left:180px}}abbr[title],abbr[data-original-title]{cursor:help;border-bottom:1px dotted #777}.initialism{font-size:90%;text-transform:uppercase}blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px solid #eee}blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child{margin-bottom:0}blockquote footer,blockquote small,blockquote .small{display:block;font-size:80%;line-height:1.42857143;color:#777}blockquote footer:before,blockquote small:before,blockquote .small:before{content:'\2014 \00A0'}.blockquote-reverse,blockquote.pull-right{padding-right:15px;padding-left:0;border-right:5px solid #eee;border-left:0;text-align:right}.blockquote-reverse footer:before,blockquote.pull-right footer:before,.blockquote-reverse small:before,blockquote.pull-right small:before,.blockquote-reverse .small:before,blockquote.pull-right .small:before{content:''}.blockquote-reverse footer:after,blockquote.pull-right footer:after,.blockquote-reverse small:after,blockquote.pull-right small:after,.blockquote-reverse .small:after,blockquote.pull-right .small:after{content:'\00A0 \2014'}address{margin-bottom:20px;font-style:normal;line-height:1.42857143}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media(min-width:768px){.container{width:750px}}@media(min-width:992px){.container{width:970px}}@media(min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media(min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media(min-width:1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.nav{margin-bottom:0;padding-left:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eee}.nav>li.disabled>a{color:#777}.nav>li.disabled>a:hover,.nav>li.disabled>a:focus{color:#777;text-decoration:none;background-color:transparent;cursor:not-allowed}.nav .open>a,.nav .open>a:hover,.nav .open>a:focus{background-color:#eee;border-color:#337ab7}.nav .nav-divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}.nav>li>a>img{max-width:none}.nav-tabs{border-bottom:1px solid #ddd}.nav-tabs>li{float:left;margin-bottom:-1px}.nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}.nav-tabs>li>a:hover{border-color:#eee #eee #ddd}.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{color:#555;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent;cursor:default}.nav-tabs.nav-justified{width:100%;border-bottom:0}.nav-tabs.nav-justified>li{float:none}.nav-tabs.nav-justified>li>a{text-align:center;margin-bottom:5px}.nav-tabs.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media(min-width:768px){.nav-tabs.nav-justified>li{display:table-cell;width:1%}.nav-tabs.nav-justified>li>a{margin-bottom:0}}.nav-tabs.nav-justified>li>a{margin-right:0;border-radius:4px}.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus{border:1px solid #ddd}@media(min-width:768px){.nav-tabs.nav-justified>li>a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0}.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus{border-bottom-color:#fff}}.nav-pills>li{float:left}.nav-pills>li>a{border-radius:4px}.nav-pills>li+li{margin-left:2px}.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{color:#fff;background-color:#337ab7}.nav-stacked>li{float:none}.nav-stacked>li+li{margin-top:2px;margin-left:0}.nav-justified{width:100%}.nav-justified>li{float:none}.nav-justified>li>a{text-align:center;margin-bottom:5px}.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media(min-width:768px){.nav-justified>li{display:table-cell;width:1%}.nav-justified>li>a{margin-bottom:0}}.nav-tabs-justified{border-bottom:0}.nav-tabs-justified>li>a{margin-right:0;border-radius:4px}.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus{border:1px solid #ddd}@media(min-width:768px){.nav-tabs-justified>li>a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0}.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus{border-bottom-color:#fff}}.tab-content>.tab-pane{display:none;visibility:hidden}.tab-content>.active{display:block;visibility:visible}.nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}a.label:hover,a.label:focus{color:#fff;text-decoration:none;cursor:pointer}.label:empty{display:none}.btn .label{position:relative;top:-1px}.label-default{background-color:#777}.label-default[href]:hover,.label-default[href]:focus{background-color:#5e5e5e}.label-primary{background-color:#337ab7}.label-primary[href]:hover,.label-primary[href]:focus{background-color:#286090}.label-success{background-color:#5cb85c}.label-success[href]:hover,.label-success[href]:focus{background-color:#449d44}.label-info{background-color:#5bc0de}.label-info[href]:hover,.label-info[href]:focus{background-color:#31b0d5}.label-warning{background-color:#f0ad4e}.label-warning[href]:hover,.label-warning[href]:focus{background-color:#ec971f}.label-danger{background-color:#d9534f}.label-danger[href]:hover,.label-danger[href]:focus{background-color:#c9302c}.clearfix:before,.clearfix:after,.dl-horizontal dd:before,.dl-horizontal dd:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.nav:before,.nav:after{content:" ";display:table}.clearfix:after,.dl-horizontal dd:after,.container:after,.container-fluid:after,.row:after,.nav:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right!important}.pull-left{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none!important;visibility:hidden!important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none!important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none!important}@media(max-width:767px){.visible-xs{display:block!important}table.visible-xs{display:table}tr.visible-xs{display:table-row!important}th.visible-xs,td.visible-xs{display:table-cell!important}}@media(max-width:767px){.visible-xs-block{display:block!important}}@media(max-width:767px){.visible-xs-inline{display:inline!important}}@media(max-width:767px){.visible-xs-inline-block{display:inline-block!important}}@media(min-width:768px) and (max-width:991px){.visible-sm{display:block!important}table.visible-sm{display:table}tr.visible-sm{display:table-row!important}th.visible-sm,td.visible-sm{display:table-cell!important}}@media(min-width:768px) and (max-width:991px){.visible-sm-block{display:block!important}}@media(min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline!important}}@media(min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block!important}}@media(min-width:992px) and (max-width:1199px){.visible-md{display:block!important}table.visible-md{display:table}tr.visible-md{display:table-row!important}th.visible-md,td.visible-md{display:table-cell!important}}@media(min-width:992px) and (max-width:1199px){.visible-md-block{display:block!important}}@media(min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline!important}}@media(min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block!important}}@media(min-width:1200px){.visible-lg{display:block!important}table.visible-lg{display:table}tr.visible-lg{display:table-row!important}th.visible-lg,td.visible-lg{display:table-cell!important}}@media(min-width:1200px){.visible-lg-block{display:block!important}}@media(min-width:1200px){.visible-lg-inline{display:inline!important}}@media(min-width:1200px){.visible-lg-inline-block{display:inline-block!important}}@media(max-width:767px){.hidden-xs{display:none!important}}@media(min-width:768px) and (max-width:991px){.hidden-sm{display:none!important}}@media(min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}@media(min-width:1200px){.hidden-lg{display:none!important}}.visible-print{display:none!important}@media print{.visible-print{display:block!important}table.visible-print{display:table}tr.visible-print{display:table-row!important}th.visible-print,td.visible-print{display:table-cell!important}}.visible-print-block{display:none!important}@media print{.visible-print-block{display:block!important}}.visible-print-inline{display:none!important}@media print{.visible-print-inline{display:inline!important}}.visible-print-inline-block{display:none!important}@media print{.visible-print-inline-block{display:inline-block!important}}@media print{.hidden-print{display:none!important}}*{-webkit-tap-highlight-color:transparent}html,body,button{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased}a[href],button{-ms-touch-action:manipulation;touch-action:manipulation;-webkit-tap-highlight-color:transparent}[class^=icon-],[class*=" icon-"]{display:inline-block;font:normal normal normal 14px/1 'icomoon';font-size:inherit;text-rendering:auto}html{background-color:#292f33}body{min-width:320px;font-size:16px;font-family:Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:300;background-color:#e1e8ed;color:#292f33}::-moz-selection{background:#c2f990}::selection{background:#c2f990}::-moz-selection{background:#c2f990}h1{font-size:30px;margin-top:5px;margin-bottom:5px}h2{font-size:24px;margin-top:5px;margin-bottom:5px}h3{font-size:22px}.anchor-link{display:block;text-decoration:none}.anchor-link:hover,.anchor-link:focus{text-decoration:none}.anchor-icon{display:none;position:relative;top:-3px;font-size:50%;color:rgba(0,0,0,.5)}.anchor-icon:before{content:'#'}.anchor-link:hover .anchor-icon,.anchor-link:focus .anchor-icon{display:inline;color:rgba(0,0,0,.5);text-decoration:none}.anchor-link.item-anchor{float:right;font-size:14px;color:#e1e8ed}.anchor-link.item-anchor:hover,.anchor-link.item-anchor:focus{color:#66757f}h4{font-size:16px}.text-muted{color:#66757f}.duration-counter{white-space:nowrap}blockquote{margin:0;padding:10px 0 10px 10px;border-left:5px solid #e1e8ed}@media(min-width:768px){blockquote{padding:10px 20px}}blockquote footer{color:#66757f}blockquote footer cite{font-style:normal}hr{margin-top:10px;margin-bottom:10px}.nav>li>a{padding:8px 15px}.nav>li>a:hover,.nav>li>a:focus{outline:none;background-color:#e1e8ed}.nav>li>a:active{background-color:#ccd6dd}.icon-lg{font-size:1.33333em;line-height:.75em;vertical-align:-15%}.icon-2x{font-size:2em}.card-wrapper{padding:10px}.card{background-color:#fff;background-color:rgba(255,255,255,.9);box-shadow:0 0 2px rgba(0,0,0,.3);padding:10px}@media print{.basics a[href]:after{content:none!important}.profile-pic{border-radius:0!important;margin-bottom:20px}.anchor-link.item-anchor{display:none}}.profile-pic{width:128px;height:128px;margin-top:5px;margin-bottom:5px}@media(min-width:992px){h1,h2,.profile-pic{margin-top:10px;margin-bottom:10px}}.basics-item .icon,.profile-item .icon{position:absolute;top:50%;margin-top:-10px}.basics-item .info,.profile-item .info{position:relative;left:30px;padding-right:30px;vertical-align:middle}.social-profiles .profile-item a{padding:5px 15px;color:inherit;text-align:left}@media(min-width:768px){.social-profiles .profile-item a{padding:5px;text-align:center}.profile-item .icon{position:static;margin-top:0}.profile-item .icon-lg{font-size:2em}}.network-github{color:#454545}.network-twitter{color:#3cf}.network-linkedin{color:#007bb6}.network-skype{color:#12a5f4}.network-stackoverflow{color:#8e8e92}.network-soundcloud{color:#e8822d}.network-pinterest{color:#bd091f}.network-vimeo{color:#17b3e8}.network-behance{color:#2c98cf}.network-codepen{color:#1c1c1c}.network-foursquare{color:#fa4778}.network-reddit{color:#545454}.network-spotify{color:#acd200}.network-dribbble{color:#ce366f}.network-facebook{color:#4b6daa}.network-angellist{color:#000}.network-bitbucket{color:#205081}.profile-card-wrapper{position:relative;padding-bottom:0;padding-right:10px}@media(min-width:992px){.profile-card-wrapper{position:fixed;height:100%;padding-right:0;padding-bottom:10px;overflow-y:hidden}.card-wrapper{float:right}}.profile-card-wrapper+.card-wrapper{padding-bottom:0}.detail{padding:5px}.detail h3{position:static;left:-44px}.detail-highlights{list-style-type:none;padding-left:0}.detail-highlights li{padding-left:1em}.detail-highlights li:before{content:'-';display:inline-block;width:1em;margin-left:-1em;color:#66757f;font-weight:700}@media(min-width:768px){.detail{padding:10px 10px 10px 50px}.detail h3{position:relative}}.detail h3 i{min-width:40px;min-height:20px;text-align:center}.detail-item{padding:10px 0;margin:0 3px;border-top:1px solid #ccd6dd}.detail-item-content{padding:0}@media(min-width:768px){.detail-item-content{padding-right:10px}.detail-item-content.col-sm-9{border-right:1px solid #ccd6dd}}.detail-highlights li{margin-bottom:2px}.labels{line-height:2;word-spacing:5px}.label-keyword{font-size:inherit;background-color:#7eb0db;margin-right:5px}#skills h4,#interests h4{font-weight:700}#references .detail-item{border:none}  </style>
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
@@ -250,7 +22,7 @@ select:-webkit-autofill {
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta http-equiv="cleartype" content="on">
-  <meta name="theme-color" content="#0d59ad">
+  <meta name="theme-color" content="#2d89ef">
 
   <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAGFBMVEUAAAAgTncgT3oiUHkiUHshUHsiUHojUnw5b/uJAAAAB3RSTlMAIVJvfqzpPQmrVgAAAFtJREFUCB1jYGAQCUt1ZAAC5nIgMAAywksVhcJLgQJlCgwMTOkGDOJFjGGpAuqFDO4BYuXliawlDOEK4eXlpUylDOkC6eXlZYxlCAZcCq4Yrh1uINwKhKVQZwAA6X0fv/bHKYEAAAAASUVORK5CYII=">
 
@@ -265,7 +37,7 @@ select:-webkit-autofill {
     <meta name="twitter:label2" content="Site">
     <meta name="twitter:data2" content="https://reedismy.name">
 </head>
-<body>
+<body class="vsc-initialized">
   <div id="top" class="container-fluid" itemscope="" itemtype="http://schema.org/Person" role="document">
     <div class="row">
 
@@ -279,7 +51,7 @@ select:-webkit-autofill {
 
             <ul class="basics nav nav-stacked">
                 <li class="basics-item">
-                  <a href="tel:(758)0509856" data-scrambled-phone-link="">
+                  <a href="tel:(203)5054301" data-scrambled-phone-link="">
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-phone"></i></span>
                     <span class="info" data-scrambled-phone-text="">(203<span style="display:none;">1337</span>) 505-4301</span>
                   </a>
@@ -297,20 +69,20 @@ select:-webkit-autofill {
                     </a>
                 </li>
                 <li class="basics-item">
-                  <a href="mailto:errq.trvfyre@tznvy.pbz" data-scrambled-email-link="">
+                  <a href="mailto:reed.geisler@gmail.com" data-scrambled-email-link="">
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-envelope"></i></span>
                     <span data-scrambled-email-text="" class="info">reed<span style="display:none;">1337</span>.geisler@gmail.com</span>
                   </a>
                 </li>
                 <li class="basics-item">
-                  <a href="https://reedismy.name" rel="author" target="_blank" itemprop="url">
+                  <a href="https://reedismy.name/" rel="author" target="_blank" itemprop="url">
                     <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-chain"></i></span>
                     <span class="info">reedismy.name</span>
                   </a>
                 </li>
 
-              <li class="basics-item hidden-print js-download-trigger" style="display: none;">
-                <a id="js-download" href="#download">
+              <li class="basics-item hidden-print js-download-trigger" style="display: block;">
+                <a id="js-download" href="http://localhost:4000/#download">
                   <span class="icon text-muted"><i aria-hidden="true" class="icon-lg icon-download"></i></span>
                   <span class="info">Download this resume</span>
                 </a>
@@ -336,7 +108,7 @@ select:-webkit-autofill {
 
 
           <ul class="nav nav-justified hidden-xs hidden-sm">
-            <li><a href="#top" class="text-muted" title="Scroll to top"><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
+            <li><a href="http://localhost:4000/#top" class="text-muted" title="Scroll to top"><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
           </ul>
         </div>
       </section>
@@ -345,7 +117,7 @@ select:-webkit-autofill {
           <div class="card">
             <div class="detail" id="about">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#about">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#about">
                   <i aria-hidden="true" class="icon-lg icon-user"></i> About
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -365,7 +137,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="experience">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#experience">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#experience">
                   <i aria-hidden="true" class="icon-lg icon-building"></i> Experience
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -374,7 +146,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="experience-28" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-28">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-28">#</a>
                       <h4>
                         <strong>Class President, Elected Student Representative</strong>,&nbsp;
                             <span itemprop="name">Student Council</span>
@@ -388,7 +160,7 @@ select:-webkit-autofill {
                           </small>
                         </p>
 
-                      <p>Elected Class Presdident for third-year medical students, member of academic policy and facilities committees.</p>
+                      <p>Elected Class President for third-year medical students, member of academic policy and facilities committees.</p>
 
                     </div>
 
@@ -406,7 +178,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-27" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-27">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-27">#</a>
                       <h4>
                         <strong>School Representative</strong>,&nbsp;
                             <span itemprop="name">AAMC Organization of Student Representatives</span>
@@ -438,7 +210,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-26" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-26">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-26">#</a>
                       <h4>
                         <strong>Co-President</strong>,&nbsp;
                             <span itemprop="name">Ultrasound Research Interest Group</span>
@@ -471,7 +243,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-25" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-25">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-25">#</a>
                       <h4>
                         <strong>Treasurer and Vice President</strong>,&nbsp;
                             <span itemprop="name">STEM in Medicine</span>
@@ -504,7 +276,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-24" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-24">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-24">#</a>
                       <h4>
                         <strong>Vice President, Events Coordinator</strong>,&nbsp;
                             <span itemprop="name">Anesthesiology Interest Group</span>
@@ -536,7 +308,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-23" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-23">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-23">#</a>
                       <h4>
                         <strong>Treasurer</strong>,&nbsp;
                             <span itemprop="name">Surgery Interest Group</span>
@@ -569,7 +341,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-22" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-22">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-22">#</a>
                       <h4>
                         <strong>Research Coordinator</strong>,&nbsp;
                             <span itemprop="name">Internal Medicine Ultrasound Community of Practice</span>
@@ -602,7 +374,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-21" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-21">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-21">#</a>
                       <h4>
                         <strong>Treasurer</strong>,&nbsp;
                             <span itemprop="name">Medical Students For Choice</span>
@@ -635,7 +407,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-20" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-20">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-20">#</a>
                       <h4>
                         <strong>Co-Founder</strong>,&nbsp;
                             <span itemprop="name">Movies in Meiling</span>
@@ -668,7 +440,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-19" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-19">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-19">#</a>
                       <h4>
                         <strong>Member</strong>,&nbsp;
                             <span itemprop="name">UCARE (Ultrasound: Clinical, Administrative, Research, Education) Program</span>
@@ -701,7 +473,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-18" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-18">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-18">#</a>
                       <h4>
                         <strong>Student Collaborator</strong>,&nbsp;
                             <span itemprop="name">The Ohio State University College of Medicine Department of Educational Technology</span>
@@ -734,7 +506,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-17" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-17">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-17">#</a>
                       <h4>
                         <strong>GRASP Founder</strong>,&nbsp;
                             <span itemprop="name">University of Cambridge, Graduate School of Life Sciences</span>
@@ -767,7 +539,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-16" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-16">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-16">#</a>
                       <h4>
                         <strong>Faculty Board Member, Graduate Operations Committee Member, School Council</strong>,&nbsp;
                             <span itemprop="name">University of Cambridge, Clinical School</span>
@@ -800,7 +572,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-15" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-15">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-15">#</a>
                       <h4>
                         <strong>Bartender</strong>,&nbsp;
                             <span itemprop="name">University of Cambridge, Churchill College Middle Common Room, 'The Vicious Penguin'</span>
@@ -833,7 +605,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-14" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-14">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-14">#</a>
                       <h4>
                         <strong>Unit Leader</strong>,&nbsp;
                             <span itemprop="name">Camp Kesem at Cornell</span>
@@ -866,7 +638,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-13" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-13">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-13">#</a>
                       <h4>
                         <strong>Health Director</strong>,&nbsp;
                             <span itemprop="name">Cornell Adult University</span>
@@ -899,7 +671,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-12" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-12">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-12">#</a>
                       <h4>
                         <strong>Treasurer</strong>,&nbsp;
                             <span itemprop="name">Cornell University Class of 2017 Council</span>
@@ -932,7 +704,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-11" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-11">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-11">#</a>
                       <h4>
                         <strong>Steering Committee, Outreach Chair</strong>,&nbsp;
                             <span itemprop="name">Cornell Orientation</span>
@@ -965,7 +737,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-10" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-10">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-10">#</a>
                       <h4>
                         <strong>Undergraduate Teaching Assistant, Introductory Psychology</strong>,&nbsp;
                             <span itemprop="name">Department of Psychology</span>
@@ -998,7 +770,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-9" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-9">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-9">#</a>
                       <h4>
                         <strong>Undergraduate and Graduate Teaching Assistant, Autotutorial Physics</strong>,&nbsp;
                             <span itemprop="name">Cornell Physics Department</span>
@@ -1031,7 +803,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-8" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-8">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-8">#</a>
                       <h4>
                         <strong>Summer Undergraduate Research Assistant, SURP</strong>,&nbsp;
                             <span itemprop="name">University of Pittsburgh</span>
@@ -1064,7 +836,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-7" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-7">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-7">#</a>
                       <h4>
                         <strong>Business Team Lead</strong>,&nbsp;
                             <span itemprop="name">Cornell Genetically Engineered Machines (iGEM) Project Team</span>
@@ -1078,7 +850,7 @@ select:-webkit-autofill {
                           </small>
                         </p>
 
-                      <p>Business team lead and wetlab team member for Cornell iGEM Synthetic Biology Project Team. While working as the business team lead, our team's project earned a gold medal, best entrepreneurship, best best environmental project, and best applied desgin awards in the annual international synthetic biology competition (iGEM Jamboree).</p>
+                      <p>Business team lead and wetlab team member for Cornell iGEM Synthetic Biology Project Team. While working as the business team lead, our team's project earned a gold medal, best entrepreneurship, best environmental project, and best applied design awards in the annual international synthetic biology competition (iGEM Jamboree).</p>
 
                     </div>
 
@@ -1097,7 +869,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-6" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-6">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-6">#</a>
                       <h4>
                         <strong>Co-founder</strong>,&nbsp;
                             <span itemprop="name">Academic Policy Committee</span>
@@ -1130,7 +902,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-5" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-5">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-5">#</a>
                       <h4>
                         <strong>Treasurer</strong>,&nbsp;
                             <span itemprop="name">Cornell Bridges to Community</span>
@@ -1163,7 +935,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-4" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-4">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-4">#</a>
                       <h4>
                         <strong>Employee and Training Committee Member</strong>,&nbsp;
                             <span itemprop="name">Cayuga's Watchers</span>
@@ -1196,7 +968,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-3" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-3">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-3">#</a>
                       <h4>
                         <strong>Study Group Leader</strong>,&nbsp;
                             <span itemprop="name">Cornell University, Department of Biological Sciences</span>
@@ -1229,7 +1001,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-2" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-2">#</a>
                       <h4>
                         <strong>Freshman Representative</strong>,&nbsp;
                             <span itemprop="name">Cornell Residential Student Congress</span>
@@ -1262,7 +1034,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="experience-1" itemprop="worksFor" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#experience-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#experience-1">#</a>
                       <h4>
                         <strong>Undergraduate Lab Assistant</strong>,&nbsp;
                             <span itemprop="name">Boyce Thompson Institute for Plant Research</span>
@@ -1298,7 +1070,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="projects">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#volunteer">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#volunteer">
                   <i aria-hidden="true" class="icon-lg icon-bookmark"></i> Volunteer Work
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -1307,7 +1079,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="project-13" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-13">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-13">#</a>
                       <h4>
                           <strong itemprop="name">Physicians CareConnection</strong>
 ,&nbsp;<span>Community Health Education Project Lead</span>
@@ -1343,7 +1115,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-12" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-12">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-12">#</a>
                       <h4>
                           <strong itemprop="name">Columbus Free Clinic</strong>
 ,&nbsp;<span>Medical Student Volunteer</span>
@@ -1379,7 +1151,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-11" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-11">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-11">#</a>
                       <h4>
                           <strong itemprop="name">Cornell University Emergency Medical Services</strong>
 ,&nbsp;<span>Emergency Medical Technician</span>
@@ -1415,7 +1187,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-10" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-10">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-10">#</a>
                       <h4>
                           <strong itemprop="name">Dryden Ambulance, Bangs Ambulance</strong>
 ,&nbsp;<span>Emergency Medical Technician</span>
@@ -1451,7 +1223,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-9" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-9">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-9">#</a>
                       <h4>
                           <strong itemprop="name">Cornell Prison Education Program</strong>
 ,&nbsp;<span>Teaching Assistant</span>
@@ -1487,7 +1259,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-8" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-8">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-8">#</a>
                       <h4>
                           <strong itemprop="name">Alpha Phi Omega Service Fraternity</strong>
 ,&nbsp;<span>Member</span>
@@ -1523,7 +1295,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-7" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-7">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-7">#</a>
                       <h4>
                           <strong itemprop="name">Empathy, Assistance, and Referral Service (EARS)</strong>
 ,&nbsp;<span>Trainee</span>
@@ -1559,7 +1331,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-6" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-6">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-6">#</a>
                       <h4>
                           <strong itemprop="name">New York Presbyterian-Cornell Hospital</strong>
 ,&nbsp;<span>Emergency Department Volunteer</span>
@@ -1595,7 +1367,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-5" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-5">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-5">#</a>
                       <h4>
                           <strong itemprop="name">Motivating Action Through Community Health Outreach (MACHO)</strong>
 ,&nbsp;<span>Summer Teacher</span>
@@ -1631,7 +1403,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-4" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-4">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-4">#</a>
                       <h4>
                           <strong itemprop="name">Churches United For Fair Housing</strong>
 ,&nbsp;<span>Outreach Volunteer</span>
@@ -1667,7 +1439,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-3" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-3">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-3">#</a>
                       <h4>
                           <strong itemprop="name">Westport Emergency Medical Services</strong>
 ,&nbsp;<span>Emergency Medical Technician</span>
@@ -1703,7 +1475,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-2" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-2">#</a>
                       <h4>
                           <strong itemprop="name">Yale-New Haven Hospital</strong>
 ,&nbsp;<span>Student Volunteer</span>
@@ -1739,7 +1511,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="project-1" itemprop="memberOf" itemscope="" itemtype="http://schema.org/Organization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#project-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#project-1">#</a>
                       <h4>
                           <strong itemprop="name">Norwalk Hospital</strong>
 ,&nbsp;<span>Student Volunteer</span>
@@ -1778,7 +1550,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="education">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#education">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#education">
                   <i aria-hidden="true" class="icon-lg icon-graduation-cap"></i> Education
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -1787,7 +1559,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="education-7" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-7">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-7">#</a>
                       <h4>
                         <strong>Medicine</strong>,&nbsp;<span>M.D.</span>
                       </h4>
@@ -1819,7 +1591,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="education-6" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-6">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-6">#</a>
                       <h4>
                         <strong>Translational Biomedical Research</strong>,&nbsp;<span>Research Assistant in Cancer Research UK Cambridge Institute</span>
                       </h4>
@@ -1851,7 +1623,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="education-5" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-5">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-5">#</a>
                       <h4>
                         <strong>Biomedical Engineering</strong>,&nbsp;<span>M.Eng.</span>
                       </h4>
@@ -1884,7 +1656,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="education-4" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-4">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-4">#</a>
                       <h4>
                         <strong>Chemistry &amp; Chemical Biology / Biological Sciences with Concentration in Biochemistry</strong>,&nbsp;<span>B.A. / B.A.</span>
                       </h4>
@@ -1917,7 +1689,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="education-3" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-3">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-3">#</a>
                       <h4>
                         <strong>Early College Program</strong>                      </h4>
 
@@ -1952,7 +1724,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="education-2" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-2">#</a>
                       <h4>
                         <strong>High School Degree</strong>                      </h4>
 
@@ -1984,7 +1756,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="education-1" itemprop="alumniOf" itemscope="" itemtype="http://schema.org/EducationalOrganization">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#education-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#education-1">#</a>
                       <h4>
                         <strong>EMT-Basic Certification Course</strong>                      </h4>
 
@@ -2018,7 +1790,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="skills">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#skills">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#skills">
                   <i aria-hidden="true" class="icon-lg icon-code"></i> Skills
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -2027,7 +1799,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="skill-3">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#skill-3">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#skill-3">#</a>
                       <h4>Web Development <span class="text-muted">— <em>Beginner-Intermediate</em></span></h4>
 
                         <ul class="list-inline labels">
@@ -2037,7 +1809,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="skill-2">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#skill-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#skill-2">#</a>
                       <h4>3D Modeling and Printing <span class="text-muted">— <em>Beginner</em></span></h4>
 
                         <ul class="list-inline labels">
@@ -2047,7 +1819,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="skill-1">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#skill-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#skill-1">#</a>
                       <h4>Photography and film <span class="text-muted">— <em>Intermediate</em></span></h4>
 
                         <ul class="list-inline labels">
@@ -2060,7 +1832,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="awards">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#awards">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#awards">
                   <i aria-hidden="true" class="icon-lg icon-trophy"></i> Awards
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -2069,7 +1841,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="award-10">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-10">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-10">#</a>
                       <h4 itemprop="award">
                         <strong>Roessler Medical Student Research Scholarship</strong>,&nbsp;<span>The Ohio State University College of Medicine</span>
                       </h4>
@@ -2093,7 +1865,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-9">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-9">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-9">#</a>
                       <h4 itemprop="award">
                         <strong>Cornell University Class of 2017 Banner Bearer</strong>,&nbsp;<span>Cornell University</span>
                       </h4>
@@ -2117,7 +1889,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-8">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-8">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-8">#</a>
                       <h4 itemprop="award">
                         <strong>Best Entrepreneurship, Best Applied Design, Best Environmental Project, Gold Medal</strong>,&nbsp;<span>Genetically Engineered Machines (iGEM), International Competition</span>
                       </h4>
@@ -2141,7 +1913,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-7">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-7">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-7">#</a>
                       <h4 itemprop="award">
                         <strong>Meinig Family Cornell National Scholar</strong>,&nbsp;<span>Cornell Commitment Fellowships</span>
                       </h4>
@@ -2165,7 +1937,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-6">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-6">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-6">#</a>
                       <h4 itemprop="award">
                         <strong>Zeta Psi Scholars in New York City Fellow</strong>,&nbsp;<span>Zeta Psi Educational Foundation</span>
                       </h4>
@@ -2189,7 +1961,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-5">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-5">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-5">#</a>
                       <h4 itemprop="award">
                         <strong>Zeta Psi Educational Foundation Scholarship</strong>,&nbsp;<span>Zeta Psi Educational Foundation</span>
                       </h4>
@@ -2213,7 +1985,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-4">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-4">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-4">#</a>
                       <h4 itemprop="award">
                         <strong>Finalist, Cornell Venture Challenge</strong>,&nbsp;<span>BR Venture Fund</span>
                       </h4>
@@ -2237,7 +2009,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-3">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-3">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-3">#</a>
                       <h4 itemprop="award">
                         <strong>Pauline &amp; Irving Tanner Dean's Scholar</strong>,&nbsp;<span>Cornell University College of Arts &amp; Sciences</span>
                       </h4>
@@ -2261,7 +2033,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-2">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-2">#</a>
                       <h4 itemprop="award">
                         <strong>National AP Scholar, AP Scholar with Distinction</strong>,&nbsp;<span>CollegeBoard</span>
                       </h4>
@@ -2285,7 +2057,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="award-1">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#award-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#award-1">#</a>
                       <h4 itemprop="award">
                         <strong>Latin Honor Society</strong>,&nbsp;<span>Staples High School</span>
                       </h4>
@@ -2312,7 +2084,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="publications">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#publications">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#publications">
                   <i aria-hidden="true" class="icon-lg icon-book"></i> Projects and Publications
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -2321,7 +2093,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="publication-11" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-11">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-11">#</a>
                       <h4>
                         <strong>
                             <a href="https://journal.chestnet.org/article/S0012-3692(20)33950-7/fulltext" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Thoracoabdominal Pneumatosis Complicating a Colonoscopy</span></a>
@@ -2345,7 +2117,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-10" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-10">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-10">#</a>
                       <h4>
                         <strong>
                             <a href="https://journal.chestnet.org/article/S0012-3692(20)33855-1/fulltext" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Extensive DVT in a Young Male with Persistent Scrotal Infections</span></a>
@@ -2369,7 +2141,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-9" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-9">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-9">#</a>
                       <h4>
                         <strong>
                             <a href="https://journal.chestnet.org/article/S0012-3692(20)33354-7/fulltext" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Recurrent Spontaneous Pneumothorax in a Young Female Patient</span></a>
@@ -2393,7 +2165,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-8" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-8">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-8">#</a>
                       <h4>
                         <strong>
                             <a href="https://onlinelibrary.wiley.com/doi/10.1002/jum.15373" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Returning to Basecamp: Systemizing Student-Driven Ultrasound Research</span></a>
@@ -2417,7 +2189,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-7" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-7">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-7">#</a>
                       <h4>
                         <strong>
                             <span itemprop="name">Oral Health Screenings for Preventative Health in a Free Clinic Population</span>
@@ -2441,7 +2213,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-6" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-6">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-6">#</a>
                       <h4>
                         <strong>
                             <span itemprop="name">Medical Student Sentiment on Increased Clinical Weight in Composite Curricular MSPE Grading Schema</span>
@@ -2465,7 +2237,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-5" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-5">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-5">#</a>
                       <h4>
                         <strong>
                             <a href="https://medicine.osu.edu/-/media/files/medicine/research/resources/opportunities/md-student-resources/find-a-mentor/2019-mdsrs-awards.pdf" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Tracking Recovery of the White Matter following Ischemic Stroke</span></a>
@@ -2489,7 +2261,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-4" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-4">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-4">#</a>
                       <h4>
                         <strong>
                             <span itemprop="name">Enhancing Medical Student Education Through Technology and Innovation</span>
@@ -2513,7 +2285,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-3" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-3">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-3">#</a>
                       <h4>
                         <strong>
                             <a href="https://abstracts.ncri.org.uk/abstract/analysis-of-longitudinal-liver-function-predicts-outcome-in-sorafenib-treated-patients-with-advanced-hepatocellular-carcinoma/" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Analysis of longitudinal liver function predicts outcome in sorafenib-treated patients with advanced Hepatocellular Carcinoma.</span></a>
@@ -2537,7 +2309,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-2" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-2">#</a>
                       <h4>
                         <strong>
                             <a href="http://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.2565" target="_blank" rel="noreferrer noopener" itemprop="url"><span itemprop="name">Validation of a new model for estimating glomerular filtration rate in patients with cancer.</span></a>
@@ -2561,7 +2333,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="publication-1" itemscope="" itemtype="http://schema.org/CreativeWork">
                     <div class="col-sm-9 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#publication-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#publication-1">#</a>
                       <h4>
                         <strong>
                             <span itemprop="name">Prophylactic Dressing for the Prevention of Pressure Ulcers</span>
@@ -2588,7 +2360,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="interests">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#interests">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#interests">
                   <i aria-hidden="true" class="icon-lg icon-heart"></i> Interests
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -2597,7 +2369,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="interest-2">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#interest-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#interest-2">#</a>
                       <h4>Emerging technologies</h4>
 
                         <ul class="list-inline labels">
@@ -2607,7 +2379,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="interest-1">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#interest-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#interest-1">#</a>
                       <h4>Music</h4>
 
                         <ul class="list-inline labels">
@@ -2620,7 +2392,7 @@ select:-webkit-autofill {
 
             <div class="detail" id="languages">
               <h3 class="text-uppercase">
-                <a class="anchor-link text-muted" href="#languages">
+                <a class="anchor-link text-muted" href="http://localhost:4000/#languages">
                   <i aria-hidden="true" class="icon-lg icon-comment"></i> Languages
                   <span class="anchor-icon" aria-hidden="true"></span>
                 </a>
@@ -2629,7 +2401,7 @@ select:-webkit-autofill {
               <ul class="list-unstyled">
                   <li class="detail-item row" id="language-2">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#language-2">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#language-2">#</a>
                       <h4>
                         <strong>English</strong>,&nbsp;<span>Native speaker</span>
                       </h4>
@@ -2638,7 +2410,7 @@ select:-webkit-autofill {
                   </li>
                   <li class="detail-item row" id="language-1">
                     <div class="col-xs-12 detail-item-content">
-                      <a class="anchor-link item-anchor" href="#language-1">#</a>
+                      <a class="anchor-link item-anchor" href="http://localhost:4000/#language-1">#</a>
                       <h4>
                         <strong>Spanish</strong>,&nbsp;<span>Conversational</span>
                       </h4>
@@ -2650,7 +2422,7 @@ select:-webkit-autofill {
 
 
           <ul class="nav nav-justified visible-xs-block visible-sm-block hidden-print">
-            <li><a href="#top" class="text-muted" data-scroll=""><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
+            <li><a href="http://localhost:4000/#top" class="text-muted" data-scroll=""><i aria-hidden="true" class="icon-chevron-up"></i><span class="sr-only">Go to top</span></a></li>
           </ul>
         </div>
       </section>
@@ -2661,4 +2433,8 @@ select:-webkit-autofill {
     var name = 'reedgeisler';
     window.downloadName = (name ? name + '-' : '') + 'resume.html';
     (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){(function(global){"use strict";function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj}}var _browserSaveas=require("browser-saveas");var _browserSaveas2=_interopRequireDefault(_browserSaveas);var _emailScramble=require("email-scramble");var _emailScramble2=_interopRequireDefault(_emailScramble);var document=global.document;var downloadName=global.downloadName;var isServedOnline=global.location.protocol.indexOf("http")!==-1;if(isServedOnline){(function(){var blob=new Blob(["<!doctype html>"+document.documentElement.outerHTML],{type:"text/html;charset=utf-8"});document.getElementsByClassName("js-download-trigger")[0].style.display="block";document.getElementById("js-download").addEventListener("click",function(){(0,_browserSaveas2["default"])(blob,downloadName)})})()}var mailtoLink=document.querySelectorAll("[data-scrambled-email-link]")[0];mailtoLink.href="mailto:"+_emailScramble2["default"].decode(mailtoLink.href.replace("mailto:",""));var phoneLink=document.querySelectorAll("[data-scrambled-phone-link]")[0];phoneLink.href="tel:"+_emailScramble2["default"].decode(phoneLink.href.replace("tel:",""))}).call(this,typeof global!=="undefined"?global:typeof self!=="undefined"?self:typeof window!=="undefined"?window:{})},{"browser-saveas":2,"email-scramble":3}],2:[function(require,module,exports){var saveAs=saveAs||typeof navigator!=="undefined"&&navigator.msSaveOrOpenBlob&&navigator.msSaveOrOpenBlob.bind(navigator)||function(view){"use strict";if(typeof navigator!=="undefined"&&/MSIE [1-9]\./.test(navigator.userAgent)){return}var doc=view.document,get_URL=function(){return view.URL||view.webkitURL||view},save_link=doc.createElementNS("http://www.w3.org/1999/xhtml","a"),can_use_save_link=!view.externalHost&&"download"in save_link,click=function(node){var event=doc.createEvent("MouseEvents");event.initMouseEvent("click",true,false,view,0,0,0,0,0,false,false,false,false,0,null);node.dispatchEvent(event)},webkit_req_fs=view.webkitRequestFileSystem,req_fs=view.requestFileSystem||webkit_req_fs||view.mozRequestFileSystem,throw_outside=function(ex){(view.setImmediate||view.setTimeout)(function(){throw ex},0)},force_saveable_type="application/octet-stream",fs_min_size=0,deletion_queue=[],process_deletion_queue=function(){var i=deletion_queue.length;while(i--){var file=deletion_queue[i];if(typeof file==="string"){get_URL().revokeObjectURL(file)}else{file.remove()}}deletion_queue.length=0},dispatch=function(filesaver,event_types,event){event_types=[].concat(event_types);var i=event_types.length;while(i--){var listener=filesaver["on"+event_types[i]];if(typeof listener==="function"){try{listener.call(filesaver,event||filesaver)}catch(ex){throw_outside(ex)}}}},FileSaver=function(blob,name){var filesaver=this,type=blob.type,blob_changed=false,object_url,target_view,get_object_url=function(){var object_url=get_URL().createObjectURL(blob);deletion_queue.push(object_url);return object_url},dispatch_all=function(){dispatch(filesaver,"writestart progress write writeend".split(" "))},fs_error=function(){if(blob_changed||!object_url){object_url=get_object_url(blob)}if(target_view){target_view.location.href=object_url}else{window.open(object_url,"_blank")}filesaver.readyState=filesaver.DONE;dispatch_all()},abortable=function(func){return function(){if(filesaver.readyState!==filesaver.DONE){return func.apply(this,arguments)}}},create_if_not_found={create:true,exclusive:false},slice;filesaver.readyState=filesaver.INIT;if(!name){name="download"}if(can_use_save_link){object_url=get_object_url(blob);save_link.href=object_url;save_link.download=name;click(save_link);filesaver.readyState=filesaver.DONE;dispatch_all();return}if(view.chrome&&type&&type!==force_saveable_type){slice=blob.slice||blob.webkitSlice;blob=slice.call(blob,0,blob.size,force_saveable_type);blob_changed=true}if(webkit_req_fs&&name!=="download"){name+=".download"}if(type===force_saveable_type||webkit_req_fs){target_view=view}if(!req_fs){fs_error();return}fs_min_size+=blob.size;req_fs(view.TEMPORARY,fs_min_size,abortable(function(fs){fs.root.getDirectory("saved",create_if_not_found,abortable(function(dir){var save=function(){dir.getFile(name,create_if_not_found,abortable(function(file){file.createWriter(abortable(function(writer){writer.onwriteend=function(event){target_view.location.href=file.toURL();deletion_queue.push(file);filesaver.readyState=filesaver.DONE;dispatch(filesaver,"writeend",event)};writer.onerror=function(){var error=writer.error;if(error.code!==error.ABORT_ERR){fs_error()}};"writestart progress write abort".split(" ").forEach(function(event){writer["on"+event]=filesaver["on"+event]});writer.write(blob);filesaver.abort=function(){writer.abort();filesaver.readyState=filesaver.DONE};filesaver.readyState=filesaver.WRITING}),fs_error)}),fs_error)};dir.getFile(name,{create:false},abortable(function(file){file.remove();save()}),abortable(function(ex){if(ex.code===ex.NOT_FOUND_ERR){save()}else{fs_error()}}))}),fs_error)}),fs_error)},FS_proto=FileSaver.prototype,saveAs=function(blob,name){return new FileSaver(blob,name)};FS_proto.abort=function(){var filesaver=this;filesaver.readyState=filesaver.DONE;dispatch(filesaver,"abort")};FS_proto.readyState=FS_proto.INIT=0;FS_proto.WRITING=1;FS_proto.DONE=2;FS_proto.error=FS_proto.onwritestart=FS_proto.onprogress=FS_proto.onwrite=FS_proto.onabort=FS_proto.onerror=FS_proto.onwriteend=null;view.addEventListener("unload",process_deletion_queue,false);saveAs.unload=function(){process_deletion_queue();view.removeEventListener("unload",process_deletion_queue,false)};return saveAs}(typeof self!=="undefined"&&self||typeof window!=="undefined"&&window||this.content);var amdDefine=window.define;if(typeof amdDefine==="undefined"&&(typeof window.almond!=="undefined"&&"define"in window.almond)){amdDefine=window.almond.define}if(typeof module!=="undefined"&&module!==null){module.exports=saveAs}else if(typeof amdDefine!=="undefined"&&amdDefine!==null&&amdDefine.amd!=null){amdDefine("saveAs",[],function(){return saveAs})}},{}],3:[function(require,module,exports){(function wrapEmailScramble(root,factory){"use strict";if(typeof define==="function"&&define.amd){define("email-scramble",factory(root))}else if(typeof exports==="object"){module.exports=factory(root)}else{root.emailScramble=factory(root)}})(this,function emailScramble(root){"use strict";var rot=function rot(charRot,numRot,str){var numbers="0123456789";var lowercase="abcdefghijklmnopqrstuvwxyz";var uppercase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";var regexNumber=/[0-9]/;var regexLowercase=/[a-z]/;var regexUppercase=/[A-Z]/;str=String(str);if(charRot<0){charRot+=26}if(numRot<0){numRot+=10}var length=str.length;var index=-1;var result="";var character;var currentPosition;var shiftedPosition;while(++index<length){character=str.charAt(index);if(regexNumber.test(character)){currentPosition=numbers.indexOf(character);shiftedPosition=(currentPosition+numRot)%10;result+=numbers.charAt(shiftedPosition)}else if(regexLowercase.test(character)){currentPosition=lowercase.indexOf(character);shiftedPosition=(currentPosition+charRot)%26;result+=lowercase.charAt(shiftedPosition)}else if(regexUppercase.test(character)){currentPosition=uppercase.indexOf(character);shiftedPosition=(currentPosition+charRot)%26;result+=uppercase.charAt(shiftedPosition)}else{result+=character}}return result};var rot18=function rot18(str){return rot(13,5,str)};return{rot:rot,encode:rot18,decode:rot18}})},{}]},{},[1]);
-  </script></body></html>
+  </script>
+
+
+
+</body></html>
