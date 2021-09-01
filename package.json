@@ -33,6 +33,7 @@
   "dependencies": {
     "email-scramble": "^2.0.1",
     "handlebars": "^4.0.12",
+    "jsonresume-theme-elegant-wso": "0.0.2",
     "moment": "^2.22.2"
   },
   "deprecated": false,
