@@ -35,7 +35,7 @@
         "website": "",
         "startDate": "2019-05-01",
         "endDate": "",
-        "summary": "Elected Class President for third-year medical students, member of academic policy and facilities committees.",
+        "summary": "Elected Class President for third-year medical students, member of academic policy and facilities committees. Re-elected president for fourth year of medical school.",
         "highlights": [
         ]
       },
@@ -71,7 +71,7 @@
     },
     {
       "company": "Anesthesiology Interest Group",
-      "position": "Vice President, Events Coordinator",
+      "position": "President, Vice President, Events Coordinator",
       "website": "",
       "startDate": "2019-05-10",
       "endDate": "",
@@ -513,6 +513,7 @@
     ],
 
     "awards": [
+
       {"title": "Roessler Medical Student Research Scholarship",
         "date": "2019-05-01",
         "awarder": "The Ohio State University College of Medicine",
@@ -567,30 +568,72 @@
 
     "publications": [
       {
+        "name": "Citrate Toxicity In Massive Transfusion With Hemorrhage Secondary To Metastatic Neuroendocrine Cancer",
+        "publisher": "American Society of Anesthesiologists",
+        "releaseDate": "2021-10-09",
+        "website": "",
+        "summary": "Geisler, R., Anjum, P., El-Hassan, I. 'Citrate Toxicity In Massive Transfusion With Hemorrhage Secondary To Metastatic Neuroendocrine Cancer.' Presented at: American Society of Anesthesiologists, the Anesthesiology Annual Meeting; October 2021; San Diego, CA."
+      },   
+      {
+        "name": "Management Of Iatrogenic Propofol-related Injury Due To Misplaced Central Venous Catheter",
+        "publisher": "American Society of Anesthesiologists",
+        "releaseDate": "2021-10-11",
+        "website": "",
+        "summary": "Geisler, R., Anjum, P., El-Hassan, I. 'Management Of Iatrogenic Propofol-related Injury Due To Misplaced Central Venous Catheter.' Presented at: American Society of Anesthesiologists, the Anesthesiology Annual Meeting; October 2021; San Diego, CA."
+      },   
+      {
+        "name": "Emergent Management Of A Difficult Airway Due To Ball-in-valve Laryngeal Mass",
+        "publisher": "American Society of Anesthesiologists",
+        "releaseDate": "2021-10-09",
+        "website": "",
+        "summary": "Geisler, R., Bishop, R., Garrett, A., Adib, K. 'Emergent Management of a Difficult Airway due to Ball-In-Valve Laryngeal Mass.' Presented at: American Society of Anesthesiologists, the Anesthesiology Annual Meeting; October 2021; San Diego, CA."
+      },   
+      {
+        "name": "A case of Erdheim-Chester Disease (ECD) with gastrointestinal involvement",
+        "publisher": "American College of Physicians",
+        "releaseDate": "2021-05-14",
+        "website": "",
+        "summary": "Anjum, P., Geisler, R., Kavanaugh, K. 'A case of Erdheim-Chester Disease (ECD) with gastrointestinal involvement.' Presented at: American College of Physicians 2021 National Abstract Competition; May 2021; Online."
+      },   
+      {
+        "name": "A Two-Step Approach To Contextualizing Medical School Curricular Feedback",
+        "publisher": "American College of Physicians",
+        "releaseDate": "2021-04-14",
+        "website": "",
+        "summary": "Geisler, R. 'A Two-Step Approach To Contextualizing Medical School Curricular Feedback.' Presented at: AAMC Group on Student Affairs & Organization of Student Representatives Spring Meeting; April 2021; Online."
+      },   
+      {
+        "name": "Establishing a Longitudinal Mentorship Program in General Surgery",
+        "publisher": "American Association of Medical Colleges Group on Student Affairs & Organization of Student Representatives",
+        "releaseDate": "2021-04-14",
+        "website": "",
+        "summary": "Geisler, R., Woods, E., Hoover, E., Sridharan, M., Lynch, D., Clark, K., Smith, L., Dick, S., Oosten, J., Quinn, J. 'Establishing a Longitudinal Mentorship Program in General Surgery.' Presented at: AAMC Group on Student Affairs & Organization of Student Representatives Spring Meeting; April 2021; Online."
+      },     
+      {
         "name": "Thoracoabdominal Pneumatosis Complicating a Colonoscopy",
         "publisher": "Chest Journal",
-        "releaseDate": "2020-07-26",
+        "releaseDate": "2020-10-01",
         "website": "https://journal.chestnet.org/article/S0012-3692(20)33950-7/fulltext",
         "summary": "Gilkey, T., Geisler, R., Leipold, C., Corbett, J., Turner, J., Timbadia, P. 'Thoracoabdominal Pneumatosis Complicating a Colonoscopy.' Chest, 158(4). A2037."
       },     
       {
         "name": "Extensive DVT in a Young Male with Persistent Scrotal Infections",
         "publisher": "Chest Journal",
-        "releaseDate": "2020-07-26",
+        "releaseDate": "2020-10-01",
         "website": "https://journal.chestnet.org/article/S0012-3692(20)33855-1/fulltext",
         "summary": "Geisler, R., Gilkey, T., Leipold, C., Romano, N., Dasgupta, A., Timbadia, P. 'Extensive DVT in a Young Male with Persistent Scrotal Infections.' Chest, 158(4). A1929."
       },      
       {
         "name": "Recurrent Spontaneous Pneumothorax in a Young Female Patient",
         "publisher": "Chest Journal",
-        "releaseDate": "2020-07-26",
+        "releaseDate": "2020-10-01",
         "website": "https://journal.chestnet.org/article/S0012-3692(20)33354-7/fulltext",
         "summary": "Geisler, R., Gilkey, T., Leipold, C., Dasgupta, A., Timbadia, P. 'Recurrent Spontaneous Pneumothorax in a Young Female Patient.' Chest, 158(4). A1281."
       },      
       {
         "name": "Returning to Basecamp: Systemizing Student-Driven Ultrasound Research",
         "publisher": "American Institute of Ultrasound in Medicine",
-        "releaseDate": "2020-07-26",
+        "releaseDate": "2020-05-26",
         "website": "https://onlinelibrary.wiley.com/doi/10.1002/jum.15373",
         "summary": "Banks, M., Leupold, M., Geisler, R., Shen, S., Su, J., Menon, R., Bahner, D., Prats, M. 'Returning to Basecamp: Systemizing Student-Driven Ultrasound Research.' Journal of Ultrasound in Medicine. 2020. 39(S1):S1–S223"
       },      
@@ -599,7 +642,7 @@
         "publisher": "University of Miami Department of Community Service, Community Health Leadership Conference",
         "releaseDate": "2019-12-13",
         "website": "",
-        "summary": "Geisler, R.S., Yanamadala, V., Mannix, N., Kumar, N., Vardanyan, J., Georgy, M., Patel, I., Konstan, R., Patel, P., Rotenberg, S. 'Oral Health Screenings for Preventative Health in a Free Clinic Population.' In: Proceedings from the University of Miami Department of Community Service Community Health Leadership Conference; December 2019; Miami, FL."
+        "summary": "Geisler, R.S., Yanamadala, V., Mannix, N., Kumar, N., Vardanyan, J., Georgy, M., Patel, I., Konstan, R., Patel, P., Rotenberg, S. 'Oral Health Screenings for Preventative Health in a Free Clinic Population.' Presented at: University of Miami Department of Community Service Community Health Leadership Conference; December 2019; Miami, FL."
       },
       {
         "name": "Medical Student Sentiment on Increased Clinical Weight in Composite Curricular MSPE Grading Schema",
@@ -623,14 +666,21 @@
         "summary": "Schoeffler, A., Geisler, R., Okoye, K. 'Enhancing Medical Student Education Through Technology and Innovation.' Presented at: The Ohio State Healthcare Innovation and Entrepreneurship Workshop; September 2019; Columbus, OH."
       },
       {
-        "name": "Analysis of longitudinal liver function predicts outcome in sorafenib-treated patients with advanced Hepatocellular Carcinoma.",
+        "name": "The CamGFR model for renal function in patients with cancer: Validation and extension for use with data from isotope mass dilution spectrometry creatinine assays",
+        "publisher": "National Cancer Research Institute",
+        "releaseDate": "2018-11-06",
+        "website": "https://abstracts.ncri.org.uk/abstract/the-camgfr-model-for-renal-function-in-patients-with-cancer-validation-and-extension-for-use-with-data-from-isotope-mass-dilution-spectrometry-creatinine-assays/",
+        "summary": "Williams, E. Whitley, C. Weaver, J., Connell, C., Geisler, R., Giglio, D., Tavaré, S., Jodrell, D., Janowitz, T. 'The CamGFR model for renal function in patients with cancer: Validation and extension for use with data from isotope mass dilution spectrometry creatinine assays.' Presented at: National Cancer Research Institute Cancer Conference; November 2018; Glasgow, United Kingdom"
+      },
+      {
+        "name": "Analysis of longitudinal liver function predicts outcome in sorafenib-treated patients with advanced Hepatocellular Carcinoma",
         "publisher": "National Cancer Research Institute",
         "releaseDate": "2018-11-06",
         "website": "https://abstracts.ncri.org.uk/abstract/analysis-of-longitudinal-liver-function-predicts-outcome-in-sorafenib-treated-patients-with-advanced-hepatocellular-carcinoma/",
         "summary": "Potts, H., Williams E., Geisler, R.S., Connell, C., Hoare, M., Janowitz, T. 'Analysis of longitudinal liver function predicts outcome in sorafenib-treated patients with advanced Hepatocellular Carcinoma.' Presented at: National Cancer Research Institute Cancer Conference; November 2018; Glasgow, United Kingdom"
       },
       {
-        "name": "Validation of a new model for estimating glomerular filtration rate in patients with cancer.",
+        "name": "Validation of a new model for estimating glomerular filtration rate in patients with cancer",
         "publisher": "Journal of Clinical Oncology",
         "releaseDate": "2018-05-01",
         "website": "http://ascopubs.org/doi/abs/10.1200/JCO.2018.36.15_suppl.2565",
