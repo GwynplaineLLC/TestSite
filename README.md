@@ -10,4 +10,4 @@ Future goals for CV or future portfolio site:
 * Consider alternative designs
 * Expanded descriptions of each experience/award/publication
 * Links to all publications, posters, presentations once generated and as appropriate
-* * Dropdown/search functionality through sections, once experiences have grown lengthy enough to warrant it
+* Dropdown/search functionality through sections, once experiences have grown lengthy enough to warrant it
