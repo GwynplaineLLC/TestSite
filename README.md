@@ -1,80 +1,13 @@
-# Eloquent [![npm](https://img.shields.io/npm/v/jsonresume-theme-eloquent.svg)](https://www.npmjs.com/package/jsonresume-theme-eloquent) [![Build Status](https://img.shields.io/travis/thibaudcolas/jsonresume-theme-eloquent.svg)](https://travis-ci.org/thibaudcolas/jsonresume-theme-eloquent)
+# Reed Geisler's Curriculum Vitae
 
-An eloquent JSON Resume theme: fluent, persuasive, for developers. [See it live](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html).
+This is a personal project, relying on JSONResume to build the design of my site at https://reedismy.name. Frontend construction and deployment kindly provided courtesy of Netlify.
 
-[![Theme screenshot](raw/theme-screenshot.png)](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
+As a personal reminder to myself: with each build, remember to require the excellent "Eloquent" theme, and after generating each build, apply minor stylistic changes to headings and other portions of the page in generated index.html appropriate to current desired build (may eventually troubleshoot local theme rendering faults with JSONResume's command line tool handling of handlebars (.hbs) files in local repository).
 
-> [Online demo](https://rawgit.com/thibaudcolas/jsonresume-theme-eloquent/master/test/resume.html)
+resume.json is the most up-to-date compendium of major experiences in my CV, with exception to minor or single-day experiences, removed as appropriate. Thanks again to all of the developers on JSONResume who made this hobby project possible!
 
-## Features
-
-* Mobile First theme based on Bootstrap.
-* Download your resume with a single click, in a single file.
-* Keep your resume offline if you want to: the theme is self-contained.
-* Obfuscates your email address and phone number from spam bots.
-* Great Font Awesome icons.
-* Gorgeous Open Sans web font.
-* Optimized for print and screen readers.
-* Contains Schema.org markup to make the most of your content.
-* Uses Open Graph & Twitter metas to improve social sharing.
-* Optionally use Google Analytics to track page views on your resume.
-* All fields are optional, pick what you need!
-
-## Usage
-
-Install the theme,
-
-```sh
-npm install --save jsonresume-theme-eloquent
-```
-
-Then use it:
-
-```js
-'use strict';
-
-var theme = require('jsonresume-theme-eloquent');
-
-var resume = require('./resume.json');
-process.stdout.write(theme.render(resume));
-```
-
-## Contributing
-
-Install the project with:
-
-```sh
-git clone git@github.com:thibaudcolas/jsonresume-theme-eloquent.git
-cd jsonresume-theme-eloquent
-npm install
-./.githooks/deploy
-# To actively work on the theme.
-npm run start
-```
-
-To run the tests locally:
-
-```sh
-# To create a reference resume export.
-npm run test
-cp test/resume.html test/old-resume.html
-# To compare the result of your changes against the reference.
-npm run test
-diff -u test/old-resume.html test/resume.html
-```
-
-To release a new version:
-
-```sh
-npm version minor -m "Release %s"
-git push origin master
-git push --tags
-npm publish
-```
-
-## Built with
-
-* [Bootstrap](http://getbootstrap.com/): custom build
-* [IcoMoon](https://icomoon.io/): custom [Font Awesome](https://fortawesome.github.io/Font-Awesome/) build
-* [Open Sans](http://www.google.com/fonts/specimen/Open+Sans): great web font-face, taken from Google Fonts
-* [saveAs polyfill](https://github.com/eligrey/FileSaver.js)
+Future goals for CV or future portfolio site:
+* Consider alternative designs
+* Expanded descriptions of each experience/award/publication
+* Links to all publications, posters, presentations once generated and as appropriate
+* Dropdown/search functionality through sections, once experiences have grown lengthy enough to warrant it
